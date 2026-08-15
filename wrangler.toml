@@ -1,0 +1,12 @@
+name = "tripplanner"
+compatibility_date = "2024-10-01"
+pages_build_output_dir = "dist"
+
+# Create the database once with:
+#   npx wrangler d1 create tripplanner
+# then paste the returned database_id below.
+[[d1_databases]]
+binding = "DB"
+database_name = "tripplanner"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+migrations_dir = "migrations"

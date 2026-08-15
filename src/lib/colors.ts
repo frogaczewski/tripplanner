@@ -1,0 +1,11 @@
+/** Per-day track colours, reused between the map and the day list swatches. */
+export const DAY_COLORS = [
+  '#2563eb',
+  '#db2777',
+  '#059669',
+  '#d97706',
+  '#7c3aed',
+  '#0891b2',
+  '#dc2626',
+  '#4d7c0f',
+]
