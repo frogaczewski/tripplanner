@@ -8,5 +8,5 @@ pages_build_output_dir = "dist"
 [[d1_databases]]
 binding = "DB"
 database_name = "tripplanner"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "05750cef-fc3a-4af8-a414-775b886b54b0"
 migrations_dir = "migrations"
