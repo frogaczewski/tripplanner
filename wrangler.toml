@@ -10,3 +10,11 @@ binding = "DB"
 database_name = "tripplanner"
 database_id = "05750cef-fc3a-4af8-a414-775b886b54b0"
 migrations_dir = "migrations"
+
+# Bindings are not inherited by named environments, so the preview environment
+# (every non-production branch) needs its own copy pointing at the same database.
+[[env.preview.d1_databases]]
+binding = "DB"
+database_name = "tripplanner"
+database_id = "05750cef-fc3a-4af8-a414-775b886b54b0"
+migrations_dir = "migrations"
