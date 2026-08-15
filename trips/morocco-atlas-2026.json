@@ -1,0 +1,95 @@
+{
+  "id": "morocco-atlas-2026",
+  "title": "High Atlas Loop",
+  "subtitle": "Marrakech · Tizi n'Test · Anti-Atlas · Tizi n'Tichka",
+  "status": "draft",
+  "country": ["Morocco"],
+  "dates": { "start": null, "end": null },
+  "rider": "Filip Rogaczewski",
+  "bike": "TBC",
+  "geometry_source": "waypoints",
+  "geometry_note": "PLACEHOLDER ROUTE. This is a classic Marrakech loop over both major Atlas passes, put in so the planned-trip rendering can be checked. Replace the stages below with the real itinerary from the Morocco research conversation.",
+  "totals": {
+    "distance_km": null,
+    "elevation_m": null,
+    "high_point_m": 2260,
+    "high_point_name": "Tizi n'Tichka"
+  },
+  "stages": [
+    {
+      "day": 1, "from": "Marrakech", "to": "Ijoukak",
+      "distance_km": 95, "elevation_m": 1250, "elevation_source": "estimated",
+      "note": "Flat run out of the city, then the valley starts to tilt at Asni.",
+      "waypoints": [
+        {"name": "Marrakech", "lat": 31.6295, "lon": -7.9811, "ele": 466, "type": "start"},
+        {"name": "Tahannaout", "lat": 31.3560, "lon": -7.9500, "ele": 925, "type": "town"},
+        {"name": "Asni", "lat": 31.2545, "lon": -7.9800, "ele": 1150, "type": "town"},
+        {"name": "Ouirgane", "lat": 31.1830, "lon": -8.0800, "ele": 1050},
+        {"name": "Ijoukak", "lat": 30.9800, "lon": -8.1600, "ele": 1100, "type": "end"}
+      ]
+    },
+    {
+      "day": 2, "from": "Ijoukak", "to": "Taroudant",
+      "distance_km": 135, "elevation_m": 1350, "elevation_source": "estimated",
+      "note": "Tizi n'Test, then a very long descent to the Souss plain. Heat management day.",
+      "waypoints": [
+        {"name": "Ijoukak", "lat": 30.9800, "lon": -8.1600, "ele": 1100, "type": "start"},
+        {"name": "Tizi n'Test", "lat": 30.8722, "lon": -8.3644, "ele": 2092, "type": "col"},
+        {"name": "Ouled Berhil", "lat": 30.6400, "lon": -8.5300, "ele": 430},
+        {"name": "Taroudant", "lat": 30.4703, "lon": -8.8770, "ele": 250, "type": "end"}
+      ]
+    },
+    {
+      "day": 3, "from": "Taroudant", "to": "Taliouine",
+      "distance_km": 90, "elevation_m": 1100, "elevation_source": "estimated",
+      "waypoints": [
+        {"name": "Taroudant", "lat": 30.4703, "lon": -8.8770, "ele": 250, "type": "start"},
+        {"name": "Ouled Berhil", "lat": 30.6400, "lon": -8.5300, "ele": 430, "type": "town"},
+        {"name": "Aoulouz", "lat": 30.6700, "lon": -8.1700, "ele": 750},
+        {"name": "Taliouine", "lat": 30.5333, "lon": -7.9250, "ele": 1100, "type": "end"}
+      ]
+    },
+    {
+      "day": 4, "from": "Taliouine", "to": "Tazenakht",
+      "distance_km": 85, "elevation_m": 950, "elevation_source": "estimated",
+      "note": "Tizi n'Taghatine (~1,880 m) between the two towns.",
+      "waypoints": [
+        {"name": "Taliouine", "lat": 30.5333, "lon": -7.9250, "ele": 1100, "type": "start"},
+        {"name": "Tizi n'Taghatine", "lat": 30.5600, "lon": -7.6000, "ele": 1880, "type": "col"},
+        {"name": "Tazenakht", "lat": 30.5772, "lon": -7.2036, "ele": 1400, "type": "end"}
+      ]
+    },
+    {
+      "day": 5, "from": "Tazenakht", "to": "Ouarzazate",
+      "distance_km": 95, "elevation_m": 700, "elevation_source": "estimated",
+      "waypoints": [
+        {"name": "Tazenakht", "lat": 30.5772, "lon": -7.2036, "ele": 1400, "type": "start"},
+        {"name": "Amerzgane", "lat": 30.9000, "lon": -7.1500, "ele": 1300},
+        {"name": "Ouarzazate", "lat": 30.9189, "lon": -6.8934, "ele": 1160, "type": "end"}
+      ]
+    },
+    {
+      "day": 6, "from": "Ouarzazate", "to": "Telouet",
+      "distance_km": 90, "elevation_m": 1300, "elevation_source": "estimated",
+      "note": "Via Aït Benhaddou and the old kasbah road up to Telouet.",
+      "waypoints": [
+        {"name": "Ouarzazate", "lat": 30.9189, "lon": -6.8934, "ele": 1160, "type": "start"},
+        {"name": "Aït Benhaddou", "lat": 31.0470, "lon": -7.1300, "ele": 1300, "type": "town"},
+        {"name": "Tiffoultoute", "lat": 31.1200, "lon": -7.2000, "ele": 1450},
+        {"name": "Telouet", "lat": 31.2900, "lon": -7.2400, "ele": 1800, "type": "end"}
+      ]
+    },
+    {
+      "day": 7, "from": "Telouet", "to": "Marrakech",
+      "distance_km": 120, "elevation_m": 1150, "elevation_source": "estimated",
+      "note": "Tizi n'Tichka from the east, then ~100 km of descent into Marrakech.",
+      "waypoints": [
+        {"name": "Telouet", "lat": 31.2900, "lon": -7.2400, "ele": 1800, "type": "start"},
+        {"name": "Tizi n'Tichka", "lat": 31.2925, "lon": -7.3728, "ele": 2260, "type": "col"},
+        {"name": "Taddert", "lat": 31.3400, "lon": -7.4300, "ele": 1650},
+        {"name": "Aït Ourir", "lat": 31.5600, "lon": -7.6600, "ele": 620, "type": "town"},
+        {"name": "Marrakech", "lat": 31.6295, "lon": -7.9811, "ele": 466, "type": "end"}
+      ]
+    }
+  ]
+}

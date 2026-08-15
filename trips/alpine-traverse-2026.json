@@ -1,0 +1,118 @@
+{
+  "id": "alpine-traverse-2026",
+  "title": "Alpine Traverse",
+  "subtitle": "Mediterranean to Grenoble",
+  "status": "completed",
+  "country": ["France"],
+  "dates": { "start": "2026-08-01", "end": "2026-08-06" },
+  "rider": "Filip Rogaczewski",
+  "bike": "Factor Aluto · GP5000 S TR 30 mm",
+  "geometry_source": "waypoints",
+  "geometry_note": "Schematic polyline through real towns and cols. Drop the six Garmin .tcx files into data/raw/ and run tools/import_gps.py to replace this with the recorded trace.",
+  "totals": {
+    "distance_km": 602.8,
+    "elevation_m": 10180,
+    "moving_time": "32h 32m",
+    "elapsed_time": "50h 41m",
+    "calories": 18874,
+    "avg_power_w": 136,
+    "high_point_m": 2642,
+    "high_point_name": "Col du Galibier"
+  },
+  "stages": [
+    {
+      "day": 1, "date": "2026-08-01", "from": "La Garde-Freinet", "to": "Castellane",
+      "distance_km": 108.4, "elevation_m": 1579, "moving_time": "5h35",
+      "avg_hr": 136, "avg_power_w": 126, "elevation_source": "recorded",
+      "waypoints": [
+        {"name": "La Garde-Freinet", "lat": 43.3167, "lon": 6.4667, "ele": 380, "type": "start"},
+        {"name": "Le Luc", "lat": 43.3944, "lon": 6.3125, "ele": 90},
+        {"name": "Draguignan", "lat": 43.5400, "lon": 6.4667, "ele": 200, "type": "town"},
+        {"name": "Châteaudouble", "lat": 43.6167, "lon": 6.4500, "ele": 600},
+        {"name": "Plateau de Canjuers", "lat": 43.7500, "lon": 6.5300, "ele": 955, "type": "highpoint"},
+        {"name": "Comps-sur-Artuby", "lat": 43.7100, "lon": 6.5100, "ele": 890, "type": "town"},
+        {"name": "Pont de Soleils", "lat": 43.8300, "lon": 6.4700, "ele": 700},
+        {"name": "Castellane", "lat": 43.8478, "lon": 6.5133, "ele": 724, "type": "end"}
+      ]
+    },
+    {
+      "day": 2, "date": "2026-08-02", "from": "Castellane", "to": "Barcelonnette",
+      "distance_km": 92.8, "elevation_m": 1741, "moving_time": "5h17",
+      "avg_hr": 135, "avg_power_w": 135, "elevation_source": "recorded",
+      "waypoints": [
+        {"name": "Castellane", "lat": 43.8478, "lon": 6.5133, "ele": 724, "type": "start"},
+        {"name": "Saint-André-les-Alpes", "lat": 43.9700, "lon": 6.5100, "ele": 914, "type": "town"},
+        {"name": "Thorame-Haute", "lat": 44.0900, "lon": 6.5800, "ele": 1010},
+        {"name": "Colmars", "lat": 44.1783, "lon": 6.6250, "ele": 1235, "type": "town"},
+        {"name": "Allos", "lat": 44.2417, "lon": 6.6303, "ele": 1425},
+        {"name": "Col d'Allos", "lat": 44.2867, "lon": 6.5850, "ele": 2247, "type": "col"},
+        {"name": "Barcelonnette", "lat": 44.3869, "lon": 6.6519, "ele": 1132, "type": "end"}
+      ]
+    },
+    {
+      "day": 3, "date": "2026-08-03", "from": "Barcelonnette", "to": "Briançon",
+      "distance_km": 89.4, "elevation_m": 1652, "moving_time": "5h06",
+      "avg_hr": 131, "avg_power_w": 132, "elevation_source": "recorded",
+      "waypoints": [
+        {"name": "Barcelonnette", "lat": 44.3869, "lon": 6.6519, "ele": 1132, "type": "start"},
+        {"name": "Jausiers", "lat": 44.4167, "lon": 6.7333, "ele": 1220},
+        {"name": "La Condamine-Châtelard", "lat": 44.4300, "lon": 6.7350, "ele": 1310},
+        {"name": "Saint-Paul-sur-Ubaye", "lat": 44.5000, "lon": 6.7833, "ele": 1470},
+        {"name": "Col de Vars", "lat": 44.5386, "lon": 6.7025, "ele": 2109, "type": "col"},
+        {"name": "Vars", "lat": 44.5833, "lon": 6.6833, "ele": 1650},
+        {"name": "Guillestre", "lat": 44.6600, "lon": 6.6500, "ele": 1000, "type": "town"},
+        {"name": "Briançon", "lat": 44.8994, "lon": 6.6353, "ele": 1200, "type": "end"}
+      ]
+    },
+    {
+      "day": 4, "date": "2026-08-04", "from": "Briançon", "to": "Bourg-d'Oisans",
+      "distance_km": 85.0, "elevation_m": 1509, "moving_time": "4h13",
+      "avg_hr": 135, "avg_power_w": 147, "elevation_source": "recorded",
+      "note": "Out-and-back to the Galibier summit from the Lautaret.",
+      "waypoints": [
+        {"name": "Briançon", "lat": 44.8994, "lon": 6.6353, "ele": 1200, "type": "start"},
+        {"name": "Le Monêtier-les-Bains", "lat": 44.9800, "lon": 6.5100, "ele": 1480},
+        {"name": "Col du Lautaret", "lat": 45.0344, "lon": 6.4053, "ele": 2058, "type": "col"},
+        {"name": "Col du Galibier", "lat": 45.0642, "lon": 6.4078, "ele": 2642, "type": "col"},
+        {"name": "Col du Lautaret", "lat": 45.0344, "lon": 6.4053, "ele": 2058},
+        {"name": "La Grave", "lat": 45.0450, "lon": 6.3050, "ele": 1450, "type": "town"},
+        {"name": "Le Freney-d'Oisans", "lat": 45.0700, "lon": 6.1300, "ele": 900},
+        {"name": "Bourg-d'Oisans", "lat": 45.0553, "lon": 6.0303, "ele": 720, "type": "end"}
+      ]
+    },
+    {
+      "day": 5, "date": "2026-08-05", "from": "Bourg-d'Oisans", "to": "Albertville",
+      "distance_km": 109.0, "elevation_m": 1633, "moving_time": "5h46",
+      "avg_hr": 126, "avg_power_w": 140, "elevation_source": "recorded",
+      "note": "Best day of the week: 109 km and 1,633 m at 126 bpm.",
+      "waypoints": [
+        {"name": "Bourg-d'Oisans", "lat": 45.0553, "lon": 6.0303, "ele": 720, "type": "start"},
+        {"name": "Rochetaillée", "lat": 45.1100, "lon": 6.0400, "ele": 730},
+        {"name": "Allemond", "lat": 45.1400, "lon": 6.0700, "ele": 830},
+        {"name": "Barrage de Grand'Maison", "lat": 45.1900, "lon": 6.1400, "ele": 1700},
+        {"name": "Col du Glandon", "lat": 45.2350, "lon": 6.1720, "ele": 1924, "type": "col"},
+        {"name": "La Chambre", "lat": 45.3600, "lon": 6.2900, "ele": 470, "type": "town"},
+        {"name": "Aiguebelle", "lat": 45.5500, "lon": 6.3000, "ele": 330},
+        {"name": "Albertville", "lat": 45.6753, "lon": 6.3925, "ele": 345, "type": "end"}
+      ]
+    },
+    {
+      "day": 6, "date": "2026-08-06", "from": "Albertville", "to": "Grenoble",
+      "distance_km": 118.1, "elevation_m": 2066, "moving_time": "6h36",
+      "avg_hr": 132, "avg_power_w": 139, "elevation_source": "recorded",
+      "note": "Sting in the tail — the full Chartreuse trio on tired legs. Peak HR of the week (176).",
+      "waypoints": [
+        {"name": "Albertville", "lat": 45.6753, "lon": 6.3925, "ele": 345, "type": "start"},
+        {"name": "Grésy-sur-Isère", "lat": 45.6200, "lon": 6.2200, "ele": 300},
+        {"name": "Montmélian", "lat": 45.5050, "lon": 6.0500, "ele": 290, "type": "town"},
+        {"name": "Chapareillan", "lat": 45.4400, "lon": 5.9800, "ele": 270},
+        {"name": "Col du Granier", "lat": 45.4344, "lon": 5.9250, "ele": 1134, "type": "col"},
+        {"name": "Saint-Pierre-d'Entremont", "lat": 45.4100, "lon": 5.8600, "ele": 640},
+        {"name": "Col du Cucheron", "lat": 45.3603, "lon": 5.8583, "ele": 1139, "type": "col"},
+        {"name": "Saint-Pierre-de-Chartreuse", "lat": 45.3400, "lon": 5.8200, "ele": 900},
+        {"name": "Col de Porte", "lat": 45.2953, "lon": 5.7683, "ele": 1326, "type": "col"},
+        {"name": "Grenoble", "lat": 45.1885, "lon": 5.7245, "ele": 215, "type": "end"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trips</title>
+<style>
+  :root{color-scheme:dark;--surface-0:#0f0f0e;--surface-1:#1a1a19;--line:#333330;
+        --text-primary:#fff;--text-secondary:#c3c2b7;--text-muted:#8a897f;--accent:#ffd8a8;
+        --good:#199e70;--draft:#c98500;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--surface-0);color:var(--text-primary);
+       font:15px/1.5 ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:900px;margin:0 auto;padding:36px 16px 64px}
+  h1{font-size:32px;letter-spacing:-.02em;margin:0 0 6px}
+  .sub{color:var(--text-muted);margin:0 0 28px}
+  a.card{display:block;text-decoration:none;color:inherit;background:var(--surface-1);
+         border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:12px}
+  a.card:hover{border-color:var(--accent)}
+  .t{font-size:19px;font-weight:600;letter-spacing:-.01em}
+  .pill{font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;
+        border-radius:99px;border:1px solid var(--line);margin-left:8px;vertical-align:2px}
+  .pill.completed{color:var(--good);border-color:#1a5f48}
+  .pill.draft,.pill.planned{color:var(--draft);border-color:#6b4a08}
+  .s{color:var(--text-secondary);font-size:13.5px;margin-top:4px}
+  .n{color:var(--text-muted);font-size:12.5px;margin-top:8px}
+</style>
+</head>
+<body><div class="wrap">
+  <h1>Trips</h1>
+  <p class="sub">Routes ridden and routes planned.</p>
+  __CARDS__
+</div></body>
+</html>
