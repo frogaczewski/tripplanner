@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="trips" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata><name>Atlas &amp; Gorges — Day 2: Taddert to Ouarzazate</name><desc>110 km, 900 m (estimated). Planning route: via-points only, NOT snapped to roads. Import into Komoot / RideWithGPS / Garmin Connect and let it route between the points before riding.</desc></metadata>
+  <wpt lat="31.340000" lon="-7.430000">
+    <ele>1650.0</ele>
+    <name>Taddert</name>
+    <sym>Flag, Green</sym>
+  </wpt>
+  <wpt lat="31.292500" lon="-7.372800">
+    <ele>2260.0</ele>
+    <name>Tizi n'Tichka</name>
+    <sym>Summit</sym>
+  </wpt>
+  <wpt lat="31.047000" lon="-7.130000">
+    <ele>1300.0</ele>
+    <name>Aït Benhaddou</name>
+    <sym>City (Small)</sym>
+  </wpt>
+  <wpt lat="30.918900" lon="-6.893400">
+    <ele>1160.0</ele>
+    <name>Ouarzazate</name>
+    <sym>Flag, Blue</sym>
+  </wpt>
+  <rte><name>Atlas &amp; Gorges — Day 2: Taddert to Ouarzazate</name>
+    <rtept lat="31.340000" lon="-7.430000">
+    <ele>1650.0</ele>
+    <name>Taddert</name>
+    <sym>Flag, Green</sym>
+    </rtept>
+    <rtept lat="31.292500" lon="-7.372800">
+    <ele>2260.0</ele>
+    <name>Tizi n'Tichka</name>
+    <sym>Summit</sym>
+    </rtept>
+    <rtept lat="31.047000" lon="-7.130000">
+    <ele>1300.0</ele>
+    <name>Aït Benhaddou</name>
+    <sym>City (Small)</sym>
+    </rtept>
+    <rtept lat="30.918900" lon="-6.893400">
+    <ele>1160.0</ele>
+    <name>Ouarzazate</name>
+    <sym>Flag, Blue</sym>
+    </rtept>
+  </rte>
+</gpx>

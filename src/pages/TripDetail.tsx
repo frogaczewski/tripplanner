@@ -4,6 +4,7 @@ import Comments from '../components/Comments'
 import MapView, { type MapLayer } from '../components/MapView'
 import { getTrip } from '../data/trips'
 import { formatDistance, formatDuration } from '../lib/gpx'
+import { dayStats, isPlanned, tripTotals } from '../lib/stats'
 import { useTracks } from '../lib/useGpx'
 import { DAY_COLORS } from '../lib/colors'
 import NotFound from './NotFound'
@@ -40,12 +41,9 @@ export default function TripDetail() {
 
   if (!trip) return <NotFound />
 
-  const loaded = trip.days
-    .map((d) => tracks.get(d.gpx))
-    .filter((t): t is NonNullable<typeof t> => Boolean(t))
-  const totalDistance = loaded.reduce((sum, t) => sum + t.stats.distanceM, 0)
-  const totalAscent = loaded.reduce((sum, t) => sum + t.stats.ascentM, 0)
-  const totalDescent = loaded.reduce((sum, t) => sum + t.stats.descentM, 0)
+  const totals = tripTotals(trip, tracks)
+  const planned = isPlanned(trip)
+  const dash = (value: string | null) => (loading && value === null ? '…' : (value ?? '—'))
 
   return (
     <div className="page">
@@ -59,6 +57,11 @@ export default function TripDetail() {
           <h1>{trip.title}</h1>
           <p className="muted">{trip.region}</p>
           <p>{trip.summary}</p>
+          {trip.season && (
+            <p className="muted">
+              <strong>Season:</strong> {trip.season}
+            </p>
+          )}
         </div>
         <dl className="stat-row stat-row-large">
           <div>
@@ -66,19 +69,28 @@ export default function TripDetail() {
             <dd>{trip.days.length}</dd>
           </div>
           <div>
-            <dt>Distance</dt>
-            <dd>{loading ? '…' : formatDistance(totalDistance)}</dd>
+            <dt>{planned ? 'Distance (est.)' : 'Distance'}</dt>
+            <dd>{dash(totals.distanceM === null ? null : formatDistance(totals.distanceM))}</dd>
           </div>
           <div>
-            <dt>Ascent</dt>
-            <dd>{loading ? '…' : `${totalAscent.toLocaleString()} m`}</dd>
+            <dt>{planned ? 'Ascent (est.)' : 'Ascent'}</dt>
+            <dd>{dash(totals.ascentM === null ? null : `${totals.ascentM.toLocaleString()} m`)}</dd>
           </div>
           <div>
             <dt>Descent</dt>
-            <dd>{loading ? '…' : `${totalDescent.toLocaleString()} m`}</dd>
+            <dd>{dash(totals.descentM === null ? null : `${totals.descentM.toLocaleString()} m`)}</dd>
           </div>
         </dl>
       </header>
+
+      {planned && (
+        <p className="route-note">
+          <strong>Planning route.</strong> The GPX hold via-points only and are not
+          snapped to roads, so the map draws straight lines between towns. Distance and
+          ascent are the itinerary&rsquo;s own estimates, not measurements. Import a day
+          into Komoot, RideWithGPS or Garmin Connect to get the real routed line.
+        </p>
+      )}
 
       <section>
         <h2 className="section-title">Whole route</h2>
@@ -97,6 +109,7 @@ export default function TripDetail() {
         <ul className="day-list">
           {trip.days.map((day, i) => {
             const track = tracks.get(day.gpx)
+            const stats = dayStats(trip, day, track)
             const color = DAY_COLORS[i % DAY_COLORS.length]
             return (
               <li
@@ -122,20 +135,30 @@ export default function TripDetail() {
                     <p className="muted">{day.summary}</p>
                     <dl className="stat-row stat-row-compact">
                       <div>
-                        <dt>Distance</dt>
-                        <dd>{track ? formatDistance(track.stats.distanceM) : '…'}</dd>
+                        <dt>{stats.estimated ? 'Distance (est.)' : 'Distance'}</dt>
+                        <dd>
+                          {stats.distanceM === null
+                            ? dash(null)
+                            : formatDistance(stats.distanceM)}
+                        </dd>
                       </div>
                       <div>
-                        <dt>Ascent</dt>
-                        <dd>{track ? `${track.stats.ascentM} m` : '…'}</dd>
+                        <dt>{stats.estimated ? 'Ascent (est.)' : 'Ascent'}</dt>
+                        <dd>{stats.ascentM === null ? dash(null) : `${stats.ascentM} m`}</dd>
                       </div>
                       <div>
                         <dt>Descent</dt>
-                        <dd>{track ? `${track.stats.descentM} m` : '…'}</dd>
+                        <dd>
+                          {stats.descentM === null ? dash(null) : `${stats.descentM} m`}
+                        </dd>
                       </div>
                       <div>
                         <dt>Time</dt>
-                        <dd>{track ? formatDuration(track.stats.durationS) : '…'}</dd>
+                        <dd>
+                          {stats.durationS === null
+                            ? dash(null)
+                            : formatDuration(stats.durationS)}
+                        </dd>
                       </div>
                     </dl>
                   </div>

@@ -6,6 +6,7 @@ import MapView, { type MapLayer } from '../components/MapView'
 import { getDay } from '../data/trips'
 import { DAY_COLORS } from '../lib/colors'
 import { formatDistance, formatDuration, formatElevation } from '../lib/gpx'
+import { dayStats, isPlanned } from '../lib/stats'
 import { useTrack, useTracks } from '../lib/useGpx'
 import NotFound from './NotFound'
 
@@ -39,6 +40,8 @@ export default function DayDetail() {
   }, [found, track, contextTracks])
 
   if (!found) return <NotFound />
+  const planned = isPlanned(found.trip)
+  const stats = dayStats(found.trip, found.day, track)
   const { trip, day, index } = found
   const color = DAY_COLORS[index % DAY_COLORS.length]
   const prev = index > 0 ? trip.days[index - 1] : null
@@ -90,38 +93,52 @@ export default function DayDetail() {
         <>
           <dl className="stat-row stat-row-large">
             <div>
-              <dt>Distance</dt>
-              <dd>{formatDistance(track.stats.distanceM)}</dd>
+              <dt>{stats.estimated ? 'Distance (est.)' : 'Distance'}</dt>
+              <dd>
+                {stats.distanceM === null ? '—' : formatDistance(stats.distanceM)}
+              </dd>
             </div>
             <div>
-              <dt>Ascent</dt>
-              <dd>{track.stats.ascentM.toLocaleString()} m</dd>
+              <dt>{stats.estimated ? 'Ascent (est.)' : 'Ascent'}</dt>
+              <dd>{stats.ascentM === null ? '—' : `${stats.ascentM.toLocaleString()} m`}</dd>
             </div>
             <div>
               <dt>Descent</dt>
-              <dd>{track.stats.descentM.toLocaleString()} m</dd>
+              <dd>
+                {stats.descentM === null ? '—' : `${stats.descentM.toLocaleString()} m`}
+              </dd>
             </div>
             <div>
               <dt>High point</dt>
-              <dd>{formatElevation(track.stats.maxEleM)}</dd>
+              <dd>{formatElevation(stats.maxEleM)}</dd>
             </div>
             <div>
               <dt>Low point</dt>
-              <dd>{formatElevation(track.stats.minEleM)}</dd>
+              <dd>{formatElevation(stats.minEleM)}</dd>
             </div>
             <div>
               <dt>Elapsed</dt>
-              <dd>{formatDuration(track.stats.durationS)}</dd>
+              <dd>{formatDuration(stats.durationS)}</dd>
             </div>
             <div>
               <dt>Moving</dt>
-              <dd>{formatDuration(track.stats.movingS)}</dd>
+              <dd>{formatDuration(stats.movingS)}</dd>
             </div>
             <div>
-              <dt>Points</dt>
+              <dt>{planned ? 'Via-points' : 'Points'}</dt>
               <dd>{track.points.length.toLocaleString()}</dd>
             </div>
           </dl>
+
+          {planned && (
+            <p className="route-note">
+              <strong>Planning route.</strong> Via-points only — the line below is
+              straight between them, not a road route, so there is no elevation profile
+              and no measured descent or time. Distance and ascent are the
+              itinerary&rsquo;s estimates. Import the GPX into Komoot, RideWithGPS or
+              Garmin Connect to route it properly.
+            </p>
+          )}
 
           <section>
             <h2 className="section-title">Route</h2>
@@ -133,14 +150,16 @@ export default function DayDetail() {
             />
           </section>
 
-          <section>
-            <h2 className="section-title">Elevation</h2>
-            <ElevationProfile
-              track={track}
-              color={color}
-              onHoverDistance={setHoverDistance}
-            />
-          </section>
+          {!planned && (
+            <section>
+              <h2 className="section-title">Elevation</h2>
+              <ElevationProfile
+                track={track}
+                color={color}
+                onHoverDistance={setHoverDistance}
+              />
+            </section>
+          )}
 
           <p className="muted">
             <a href={day.gpx} download>

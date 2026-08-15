@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { trips } from '../data/trips'
 import { useTracks } from '../lib/useGpx'
 import { formatDistance } from '../lib/gpx'
+import { tripTotals } from '../lib/stats'
 import type { Trip } from '../types'
 
 function dateRange(trip: Trip): string {
@@ -32,11 +33,7 @@ export default function Home() {
         <h2 className="section-title">Trips</h2>
         <ul className="trip-grid">
           {trips.map((trip) => {
-            const loaded = trip.days
-              .map((d) => tracks.get(d.gpx))
-              .filter((t): t is NonNullable<typeof t> => Boolean(t))
-            const distance = loaded.reduce((sum, t) => sum + t.stats.distanceM, 0)
-            const ascent = loaded.reduce((sum, t) => sum + t.stats.ascentM, 0)
+            const totals = tripTotals(trip, tracks)
 
             return (
               <li key={trip.id}>
@@ -54,19 +51,19 @@ export default function Home() {
                       <dd>{trip.days.length}</dd>
                     </div>
                     <div>
-                      <dt>Distance</dt>
+                      <dt>{totals.estimated ? 'Distance (est.)' : 'Distance'}</dt>
                       <dd>
-                        {loaded.length === trip.days.length
-                          ? formatDistance(distance)
-                          : '…'}
+                        {totals.distanceM === null
+                          ? '…'
+                          : formatDistance(totals.distanceM)}
                       </dd>
                     </div>
                     <div>
-                      <dt>Ascent</dt>
+                      <dt>{totals.estimated ? 'Ascent (est.)' : 'Ascent'}</dt>
                       <dd>
-                        {loaded.length === trip.days.length
-                          ? `${ascent.toLocaleString()} m`
-                          : '…'}
+                        {totals.ascentM === null
+                          ? '…'
+                          : `${totals.ascentM.toLocaleString()} m`}
                       </dd>
                     </div>
                   </dl>

@@ -107,6 +107,19 @@ main {
   color: var(--danger);
 }
 
+/* Caveat shown on trips whose GPX are unrouted planning via-points. */
+.route-note {
+  margin: 0 0 1.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #fcd34d;
+  border-left-width: 4px;
+  border-radius: 8px;
+  background: #fffbeb;
+  color: #78350f;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 .breadcrumb {
   font-size: 0.9rem;
   color: var(--muted);

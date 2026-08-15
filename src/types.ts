@@ -9,6 +9,12 @@ export interface TripDay {
   gpx: string
   stayingAt?: string
   highlights?: string[]
+  /**
+   * Itinerary figures, used instead of the GPX-derived ones when the GPX is a
+   * planning route rather than a recorded track — see `Trip.routeQuality`.
+   */
+  plannedDistanceKm?: number
+  plannedAscentM?: number
 }
 
 export interface Trip {
@@ -20,6 +26,15 @@ export interface Trip {
   endDate: string
   summary: string
   days: TripDay[]
+  /**
+   * `recorded` (the default) means the GPX are real tracks and every figure on
+   * the page is measured from them. `planned-waypoints` means the GPX hold only
+   * unrouted via-points: the map line is straight between towns, so distance and
+   * ascent come from the itinerary and the measured-only figures are suppressed.
+   */
+  routeQuality?: 'recorded' | 'planned-waypoints'
+  /** Free text such as "Best Oct–Apr", shown on planned trips. */
+  season?: string
 }
 
 export type CommentKind = 'comment' | 'note'
