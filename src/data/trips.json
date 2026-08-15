@@ -1,5 +1,88 @@
 [
   {
+    "id": "alps-2026",
+    "title": "French Alps traverse",
+    "region": "Provence to the Isère, France",
+    "status": "completed",
+    "startDate": "2026-08-01",
+    "endDate": "2026-08-06",
+    "summary": "Six days by bike from the Massif des Maures to Grenoble — 599.8 km and 9,972 m of climbing, crossing from the Mediterranean hinterland into the high Alps. Tracks are the recorded Garmin files, cleaned and simplified for the web.",
+    "days": [
+      {
+        "id": "day-1",
+        "date": "2026-08-01",
+        "title": "La Garde-Freinet → Castellane",
+        "summary": "Out of the Massif des Maures and into the Gorges du Verdon approach. The longest low-altitude day — the climbing is constant but never goes above 1,000 m.",
+        "gpx": "/gpx/alps-2026/day-1.gpx",
+        "stayingAt": "Castellane",
+        "highlights": [
+          "107.8 km, 1,522 m up",
+          "High point 955 m"
+        ]
+      },
+      {
+        "id": "day-2",
+        "date": "2026-08-02",
+        "title": "Castellane → Barcelonnette",
+        "summary": "First real altitude of the trip: the route tops out at 2,246 m before dropping into the Ubaye valley.",
+        "gpx": "/gpx/alps-2026/day-2.gpx",
+        "stayingAt": "Barcelonnette",
+        "highlights": [
+          "High point 2,246 m",
+          "92.3 km, 1,722 m up"
+        ]
+      },
+      {
+        "id": "day-3",
+        "date": "2026-08-03",
+        "title": "Barcelonnette → Briançon",
+        "summary": "Shortest day by distance, and still 1,617 m of climbing. Tops out at 2,115 m.",
+        "gpx": "/gpx/alps-2026/day-3.gpx",
+        "stayingAt": "Briançon",
+        "highlights": [
+          "High point 2,115 m",
+          "89.1 km, 1,617 m up"
+        ]
+      },
+      {
+        "id": "day-4",
+        "date": "2026-08-04",
+        "title": "Briançon → Le Bourg-d'Oisans",
+        "summary": "The high point of the whole trip at 2,641 m. GPS dropped out several times on this stage (tunnels and deep valley sections) — the track runs straight across those gaps rather than guessing a line, and a short burst of GPS jitter has been removed.",
+        "gpx": "/gpx/alps-2026/day-4.gpx",
+        "stayingAt": "Le Bourg-d'Oisans",
+        "highlights": [
+          "High point 2,641 m — highest of the trip",
+          "GPS dropouts left as gaps"
+        ]
+      },
+      {
+        "id": "day-5",
+        "date": "2026-08-05",
+        "title": "Le Bourg-d'Oisans → Albertville",
+        "summary": "Long valley day north through the Maurienne side, 108.6 km with a 1,926 m high point.",
+        "gpx": "/gpx/alps-2026/day-5.gpx",
+        "stayingAt": "Albertville",
+        "highlights": [
+          "108.6 km, 1,585 m up",
+          "High point 1,926 m"
+        ]
+      },
+      {
+        "id": "day-6",
+        "date": "2026-08-06",
+        "title": "Albertville → Grenoble",
+        "summary": "Biggest day of the trip: 117.5 km and 2,025 m of climbing to finish, all of it below 1,350 m.",
+        "gpx": "/gpx/alps-2026/day-6.gpx",
+        "stayingAt": "Grenoble",
+        "highlights": [
+          "Longest day: 117.5 km",
+          "Most climbing: 2,025 m"
+        ]
+      }
+    ]
+  },
+  {
     "id": "tatry-2026",
     "title": "Tatra High Route",
     "region": "Tatra Mountains, Poland",
@@ -15,7 +98,10 @@
         "summary": "Gentle warm-up over Boczań. Cable car crowds thin out after the first hour.",
         "gpx": "/gpx/tatry-2026/day-1.gpx",
         "stayingAt": "Schronisko Murowaniec",
-        "highlights": ["Boczań ridge", "First view of Kościelec"]
+        "highlights": [
+          "Boczań ridge",
+          "First view of Kościelec"
+        ]
       },
       {
         "id": "day-2",
@@ -24,7 +110,10 @@
         "summary": "The chained section up to Zawrat. Bail-out is back down to Murowaniec if the rock is wet.",
         "gpx": "/gpx/tatry-2026/day-2.gpx",
         "stayingAt": "Schronisko w Dolinie Pięciu Stawów",
-        "highlights": ["Zawrat pass, 2159 m", "Chains on both sides"]
+        "highlights": [
+          "Zawrat pass, 2159 m",
+          "Chains on both sides"
+        ]
       },
       {
         "id": "day-3",
@@ -33,7 +122,10 @@
         "summary": "Long day with a there-and-back on Rysy. Start before sunrise; turn around at 13:00 regardless of where we are.",
         "gpx": "/gpx/tatry-2026/day-3.gpx",
         "stayingAt": "Schronisko przy Morskim Oku",
-        "highlights": ["Rysy, 2499 m", "Descent past Czarny Staw"]
+        "highlights": [
+          "Rysy, 2499 m",
+          "Descent past Czarny Staw"
+        ]
       },
       {
         "id": "day-4",
@@ -42,7 +134,10 @@
         "summary": "Walk out on the asphalt road, bus back to Zakopane.",
         "gpx": "/gpx/tatry-2026/day-4.gpx",
         "stayingAt": "Zakopane",
-        "highlights": ["Easy exit", "Bus every 30 min"]
+        "highlights": [
+          "Easy exit",
+          "Bus every 30 min"
+        ]
       }
     ]
   },
@@ -62,7 +157,10 @@
         "summary": "Steep climb straight off the lake, then rolling high plateau.",
         "gpx": "/gpx/dolomites-alta-via-1/day-1.gpx",
         "stayingAt": "Rifugio Sennes",
-        "highlights": ["Forcella Sora Forno", "Rifugio Biella for lunch"]
+        "highlights": [
+          "Forcella Sora Forno",
+          "Rifugio Biella for lunch"
+        ]
       },
       {
         "id": "day-2",
@@ -71,7 +169,10 @@
         "summary": "Longest day of the trip. The final pull to Lagazuoi is relentless.",
         "gpx": "/gpx/dolomites-alta-via-1/day-2.gpx",
         "stayingAt": "Rifugio Lagazuoi",
-        "highlights": ["Fanes valley", "WWI tunnels near the top"]
+        "highlights": [
+          "Fanes valley",
+          "WWI tunnels near the top"
+        ]
       },
       {
         "id": "day-3",
@@ -80,7 +181,10 @@
         "summary": "Short half-day, mostly descent then a sharp final climb to the ridge hut.",
         "gpx": "/gpx/dolomites-alta-via-1/day-3.gpx",
         "stayingAt": "Rifugio Nuvolau",
-        "highlights": ["Averau traverse", "Sunset from Nuvolau terrace"]
+        "highlights": [
+          "Averau traverse",
+          "Sunset from Nuvolau terrace"
+        ]
       }
     ]
   }
