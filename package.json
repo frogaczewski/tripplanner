@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "npm run typecheck && vite build",
+    "prebuild": "npm run gpx:stats",
+    "gpx:stats": "node scripts/build-gpx-stats.mjs",
     "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p functions/tsconfig.json",
     "preview": "vite preview",
     "gpx:sample": "node scripts/generate-sample-gpx.mjs",

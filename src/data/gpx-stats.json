@@ -1,0 +1,402 @@
+{
+  "/gpx/alps-2026/day-1.gpx": {
+    "distanceM": 107826.13812843486,
+    "ascentM": 1522,
+    "descentM": 1124,
+    "minEleM": 47.4,
+    "maxEleM": 955,
+    "durationS": 30686,
+    "movingS": 23049,
+    "points": 920
+  },
+  "/gpx/alps-2026/day-2.gpx": {
+    "distanceM": 92302.20651493772,
+    "ascentM": 1722,
+    "descentM": 1309,
+    "minEleM": 725.8,
+    "maxEleM": 2245.6,
+    "durationS": 29797,
+    "movingS": 21716,
+    "points": 864
+  },
+  "/gpx/alps-2026/day-3.gpx": {
+    "distanceM": 89086.76139643253,
+    "ascentM": 1617,
+    "descentM": 1457,
+    "minEleM": 899.4,
+    "maxEleM": 2115,
+    "durationS": 29360,
+    "movingS": 19552,
+    "points": 733
+  },
+  "/gpx/alps-2026/day-4.gpx": {
+    "distanceM": 84532.47996947265,
+    "ascentM": 1501,
+    "descentM": 2072,
+    "minEleM": 723.2,
+    "maxEleM": 2641.2,
+    "durationS": 26905,
+    "movingS": 18579,
+    "points": 750
+  },
+  "/gpx/alps-2026/day-5.gpx": {
+    "distanceM": 108551.9043818828,
+    "ascentM": 1585,
+    "descentM": 1976,
+    "minEleM": 298.8,
+    "maxEleM": 1926,
+    "durationS": 32305,
+    "movingS": 21657,
+    "points": 852
+  },
+  "/gpx/alps-2026/day-6.gpx": {
+    "distanceM": 117454.59926498623,
+    "ascentM": 2025,
+    "descentM": 2138,
+    "minEleM": 218.8,
+    "maxEleM": 1332.4,
+    "durationS": 33448,
+    "movingS": 25355,
+    "points": 864
+  },
+  "/gpx/cyprus-2025/day-1.gpx": {
+    "distanceM": 81833.28783918355,
+    "ascentM": 2131,
+    "descentM": 1226,
+    "minEleM": 62.8,
+    "maxEleM": 1247.6,
+    "durationS": 37433,
+    "movingS": 31599,
+    "points": 814
+  },
+  "/gpx/cyprus-2025/day-2.gpx": {
+    "distanceM": 89826.4519257554,
+    "ascentM": 500,
+    "descentM": 1549,
+    "minEleM": 6,
+    "maxEleM": 1107.2,
+    "durationS": 16962,
+    "movingS": 14841,
+    "points": 638
+  },
+  "/gpx/cyprus-2025/day-3.gpx": {
+    "distanceM": 116122.17250238634,
+    "ascentM": 999,
+    "descentM": 897,
+    "minEleM": 2,
+    "maxEleM": 157.6,
+    "durationS": 26205,
+    "movingS": 23239,
+    "points": 690
+  },
+  "/gpx/cyprus-2025/day-4.gpx": {
+    "distanceM": 113692.13476423224,
+    "ascentM": 659,
+    "descentM": 794,
+    "minEleM": 2,
+    "maxEleM": 191.4,
+    "durationS": 27683,
+    "movingS": 24004,
+    "points": 714
+  },
+  "/gpx/cyprus-2025/day-5.gpx": {
+    "distanceM": 85704.63030695327,
+    "ascentM": 883,
+    "descentM": 327,
+    "minEleM": 3.4,
+    "maxEleM": 582,
+    "durationS": 20304,
+    "movingS": 16887,
+    "points": 510
+  },
+  "/gpx/cyprus-2025/day-6.gpx": {
+    "distanceM": 131753.4691822318,
+    "ascentM": 1853,
+    "descentM": 2377,
+    "minEleM": 6.6,
+    "maxEleM": 893,
+    "durationS": 29222,
+    "movingS": 25454,
+    "points": 1201
+  },
+  "/gpx/manaslu-2025/day-1.gpx": {
+    "distanceM": 18537.902376336096,
+    "ascentM": 803,
+    "descentM": 339,
+    "minEleM": 846.8,
+    "maxEleM": 1351.6,
+    "durationS": 31402,
+    "movingS": 22043,
+    "points": 917
+  },
+  "/gpx/manaslu-2025/day-10.gpx": {
+    "distanceM": 15280.124006989668,
+    "ascentM": 420,
+    "descentM": 898,
+    "minEleM": 1572.8,
+    "maxEleM": 2194.8,
+    "durationS": 18895,
+    "movingS": 16032,
+    "points": 753
+  },
+  "/gpx/manaslu-2025/day-2.gpx": {
+    "distanceM": 19561.45814539422,
+    "ascentM": 936,
+    "descentM": 402,
+    "minEleM": 1319.8,
+    "maxEleM": 1876.6,
+    "durationS": 33515,
+    "movingS": 21563,
+    "points": 919
+  },
+  "/gpx/manaslu-2025/day-3.gpx": {
+    "distanceM": 16580.50872166211,
+    "ascentM": 1243,
+    "descentM": 482,
+    "minEleM": 1830.8,
+    "maxEleM": 2647,
+    "durationS": 32432,
+    "movingS": 21301,
+    "points": 884
+  },
+  "/gpx/manaslu-2025/day-4.gpx": {
+    "distanceM": 14677.420878517267,
+    "ascentM": 1162,
+    "descentM": 266,
+    "minEleM": 2580.4,
+    "maxEleM": 3522,
+    "durationS": 27403,
+    "movingS": 18454,
+    "points": 803
+  },
+  "/gpx/manaslu-2025/day-5.gpx": {
+    "distanceM": 15731.36841663619,
+    "ascentM": 637,
+    "descentM": 622,
+    "minEleM": 3519.8,
+    "maxEleM": 4055,
+    "durationS": 28093,
+    "movingS": 18094,
+    "points": 648
+  },
+  "/gpx/manaslu-2025/day-6.gpx": {
+    "distanceM": 14583.286146234903,
+    "ascentM": 1356,
+    "descentM": 1348,
+    "minEleM": 3525.2,
+    "maxEleM": 4855.2,
+    "durationS": 33832,
+    "movingS": 25923,
+    "points": 894
+  },
+  "/gpx/manaslu-2025/day-7.gpx": {
+    "distanceM": 8066.10301366178,
+    "ascentM": 359,
+    "descentM": 23,
+    "minEleM": 3524.8,
+    "maxEleM": 3868.6,
+    "durationS": 10018,
+    "movingS": 8705,
+    "points": 314
+  },
+  "/gpx/manaslu-2025/day-8.gpx": {
+    "distanceM": 15646.910993018815,
+    "ascentM": 238,
+    "descentM": 927,
+    "minEleM": 3181.4,
+    "maxEleM": 3872.4,
+    "durationS": 26201,
+    "movingS": 16521,
+    "points": 659
+  },
+  "/gpx/manaslu-2025/day-9.gpx": {
+    "distanceM": 21865.766978632077,
+    "ascentM": 452,
+    "descentM": 1460,
+    "minEleM": 2046.4,
+    "maxEleM": 3171.4,
+    "durationS": 30108,
+    "movingS": 20663,
+    "points": 990
+  },
+  "/gpx/morocco-ahansal-loop/day-1.gpx": {
+    "distanceM": 110222.98007362768,
+    "ascentM": 2043,
+    "descentM": 2063,
+    "minEleM": 731.2,
+    "maxEleM": 1527.2,
+    "durationS": null,
+    "movingS": null,
+    "points": 1081
+  },
+  "/gpx/morocco-ahansal-loop/day-2.gpx": {
+    "distanceM": 103825.99639419388,
+    "ascentM": 3416,
+    "descentM": 2447,
+    "minEleM": 800.2,
+    "maxEleM": 2627,
+    "durationS": null,
+    "movingS": null,
+    "points": 1101
+  },
+  "/gpx/morocco-ahansal-loop/day-3.gpx": {
+    "distanceM": 54188.95914885799,
+    "ascentM": 2088,
+    "descentM": 2115,
+    "minEleM": 1611.5,
+    "maxEleM": 2924.2,
+    "durationS": null,
+    "movingS": null,
+    "points": 694
+  },
+  "/gpx/morocco-ahansal-loop/day-4.gpx": {
+    "distanceM": 49025.82536356103,
+    "ascentM": 1207,
+    "descentM": 1412,
+    "minEleM": 1655,
+    "maxEleM": 2623.5,
+    "durationS": null,
+    "movingS": null,
+    "points": 563
+  },
+  "/gpx/morocco-ahansal-loop/day-5.gpx": {
+    "distanceM": 90286.7777932541,
+    "ascentM": 1025,
+    "descentM": 1743,
+    "minEleM": 696.8,
+    "maxEleM": 1836,
+    "durationS": null,
+    "movingS": null,
+    "points": 714
+  },
+  "/gpx/morocco-mgoun/day-1.gpx": {
+    "distanceM": 88062.89418711096,
+    "ascentM": 1712,
+    "descentM": 993,
+    "minEleM": 696.8,
+    "maxEleM": 1678.8,
+    "durationS": null,
+    "movingS": null,
+    "points": 771
+  },
+  "/gpx/morocco-mgoun/day-2.gpx": {
+    "distanceM": 44721.26989043033,
+    "ascentM": 1659,
+    "descentM": 1454,
+    "minEleM": 1655.2,
+    "maxEleM": 2606.5,
+    "durationS": null,
+    "movingS": null,
+    "points": 534
+  },
+  "/gpx/morocco-mgoun/day-3.gpx": {
+    "distanceM": 54188.95914885807,
+    "ascentM": 2108,
+    "descentM": 2083,
+    "minEleM": 1611.5,
+    "maxEleM": 2924.2,
+    "durationS": null,
+    "movingS": null,
+    "points": 694
+  },
+  "/gpx/morocco-mgoun/day-4.gpx": {
+    "distanceM": 47947.29580586814,
+    "ascentM": 1526,
+    "descentM": 1874,
+    "minEleM": 1471,
+    "maxEleM": 2787.5,
+    "durationS": null,
+    "movingS": null,
+    "points": 544
+  },
+  "/gpx/morocco-mgoun/day-5.gpx": {
+    "distanceM": 71231.26537056411,
+    "ascentM": 2324,
+    "descentM": 1694,
+    "minEleM": 1471,
+    "maxEleM": 2509,
+    "durationS": null,
+    "movingS": null,
+    "points": 842
+  },
+  "/gpx/morocco-mgoun/day-6.gpx": {
+    "distanceM": 117181.40467330844,
+    "ascentM": 1615,
+    "descentM": 1827,
+    "minEleM": 1837.8,
+    "maxEleM": 2666.8,
+    "durationS": null,
+    "movingS": null,
+    "points": 1096
+  },
+  "/gpx/morocco-mgoun/day-7.gpx": {
+    "distanceM": 67780.41298201217,
+    "ascentM": 1346,
+    "descentM": 1757,
+    "minEleM": 1544,
+    "maxEleM": 2113.2,
+    "durationS": null,
+    "movingS": null,
+    "points": 871
+  },
+  "/gpx/morocco-west-atlas/day-1.gpx": {
+    "distanceM": 49947.62512815113,
+    "ascentM": 928,
+    "descentM": 876,
+    "minEleM": 859.2,
+    "maxEleM": 1217.2,
+    "durationS": null,
+    "movingS": null,
+    "points": 602
+  },
+  "/gpx/morocco-west-atlas/day-2.gpx": {
+    "distanceM": 77529.60202466481,
+    "ascentM": 1522,
+    "descentM": 1764,
+    "minEleM": 689.5,
+    "maxEleM": 1368.8,
+    "durationS": null,
+    "movingS": null,
+    "points": 960
+  },
+  "/gpx/morocco-west-atlas/day-3.gpx": {
+    "distanceM": 39390.78743542359,
+    "ascentM": 1054,
+    "descentM": 859,
+    "minEleM": 689.8,
+    "maxEleM": 1496.8,
+    "durationS": null,
+    "movingS": null,
+    "points": 464
+  },
+  "/gpx/morocco-west-atlas/day-4.gpx": {
+    "distanceM": 127981.02875471704,
+    "ascentM": 3954,
+    "descentM": 3241,
+    "minEleM": 798.2,
+    "maxEleM": 2617.2,
+    "durationS": null,
+    "movingS": null,
+    "points": 1676
+  },
+  "/gpx/morocco-west-atlas/day-5.gpx": {
+    "distanceM": 60590.10536476249,
+    "ascentM": 1496,
+    "descentM": 1585,
+    "minEleM": 1690.2,
+    "maxEleM": 2232.2,
+    "durationS": null,
+    "movingS": null,
+    "points": 803
+  },
+  "/gpx/morocco-west-atlas/day-6.gpx": {
+    "distanceM": 98556.36080479706,
+    "ascentM": 3050,
+    "descentM": 3902,
+    "minEleM": 942.2,
+    "maxEleM": 2724,
+    "durationS": null,
+    "movingS": null,
+    "points": 1435
+  }
+}

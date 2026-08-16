@@ -5,7 +5,7 @@ import DaySection from '../components/DaySection'
 import MapView, { type MapLayer } from '../components/MapView'
 import { getTrip } from '../data/trips'
 import { formatDistance } from '../lib/gpx'
-import { isPlannedRoute, tripTotals } from '../lib/stats'
+import { isPlannedRoute, staticTripTotals } from '../lib/stats'
 import { useTracks } from '../lib/useGpx'
 import { DAY_COLORS } from '../lib/colors'
 import NotFound from './NotFound'
@@ -49,9 +49,8 @@ export default function TripDetail() {
 
   if (!trip) return <NotFound />
 
-  const totals = tripTotals(trip, tracks)
+  const totals = staticTripTotals(trip)
   const planned = isPlannedRoute(trip)
-  const dash = (value: string | null) => (loading && value === null ? '…' : (value ?? '—'))
 
   return (
     <div className="page">
@@ -78,15 +77,15 @@ export default function TripDetail() {
           </div>
           <div>
             <dt>Distance</dt>
-            <dd>{dash(totals.distanceM === null ? null : formatDistance(totals.distanceM))}</dd>
+            <dd>{formatDistance(totals.distanceM)}</dd>
           </div>
           <div>
             <dt>Ascent</dt>
-            <dd>{dash(totals.ascentM === null ? null : `${totals.ascentM.toLocaleString()} m`)}</dd>
+            <dd>{totals.ascentM.toLocaleString()} m</dd>
           </div>
           <div>
             <dt>Descent</dt>
-            <dd>{dash(totals.descentM === null ? null : `${totals.descentM.toLocaleString()} m`)}</dd>
+            <dd>{totals.descentM.toLocaleString()} m</dd>
           </div>
         </dl>
       </header>

@@ -1,5 +1,38 @@
+import gpxStats from '../data/gpx-stats.json'
+import type { TrackStats } from './gpx'
 import type { Track } from './gpx'
-import type { Trip } from '../types'
+import type { Trip, TripDay } from '../types'
+
+const STATS = gpxStats as Record<string, TrackStats & { points: number }>
+
+/**
+ * Stats precomputed from the committed GPX by `npm run gpx:stats`.
+ *
+ * Summary views use these so they can render immediately; pages that draw a
+ * map still parse the real file, and both use identical maths.
+ */
+export function staticDayStats(day: TripDay): (TrackStats & { points: number }) | undefined {
+  return STATS[day.gpx]
+}
+
+export function staticTripTotals(trip: Trip): {
+  distanceM: number
+  ascentM: number
+  descentM: number
+} {
+  return trip.days.reduce(
+    (acc, day) => {
+      const s = STATS[day.gpx]
+      if (!s) return acc
+      return {
+        distanceM: acc.distanceM + s.distanceM,
+        ascentM: acc.ascentM + s.ascentM,
+        descentM: acc.descentM + s.descentM,
+      }
+    },
+    { distanceM: 0, ascentM: 0, descentM: 0 },
+  )
+}
 
 /** True when the route was produced by a router rather than ridden. */
 export function isPlannedRoute(trip: Trip): boolean {

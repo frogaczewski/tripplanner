@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom'
-import { homeEntries, trips } from '../data/trips'
-import { useTracks } from '../lib/useGpx'
+import { homeEntries } from '../data/trips'
 import { formatDistance } from '../lib/gpx'
-import { tripTotals } from '../lib/stats'
+import { staticTripTotals } from '../lib/stats'
 import type { Trip } from '../types'
 
 function dateRange(startDate: string, endDate: string): string {
@@ -24,7 +23,6 @@ function optionSpread(options: Trip[]): string {
 }
 
 export default function Home() {
-  const { tracks } = useTracks(trips.flatMap((t) => t.days.map((d) => d.gpx)))
   const entries = homeEntries()
 
   return (
@@ -75,7 +73,7 @@ export default function Home() {
             }
 
             const trip = entry.trip
-            const totals = tripTotals(trip, tracks)
+            const totals = staticTripTotals(trip)
             return (
               <li key={trip.id}>
                 <Link to={`/trips/${trip.id}`} className="trip-card">
@@ -93,17 +91,11 @@ export default function Home() {
                     </div>
                     <div>
                       <dt>Distance</dt>
-                      <dd>
-                        {totals.distanceM === null ? '…' : formatDistance(totals.distanceM)}
-                      </dd>
+                      <dd>{formatDistance(totals.distanceM)}</dd>
                     </div>
                     <div>
                       <dt>Ascent</dt>
-                      <dd>
-                        {totals.ascentM === null
-                          ? '…'
-                          : `${totals.ascentM.toLocaleString()} m`}
-                      </dd>
+                      <dd>{totals.ascentM.toLocaleString()} m</dd>
                     </div>
                   </dl>
                 </Link>

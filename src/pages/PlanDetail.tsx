@@ -5,7 +5,7 @@ import MapView, { type MapLayer } from '../components/MapView'
 import { getPlan, planOptions } from '../data/trips'
 import { DAY_COLORS } from '../lib/colors'
 import { formatDistance } from '../lib/gpx'
-import { tripTotals } from '../lib/stats'
+import { staticTripTotals } from '../lib/stats'
 import { useTracks } from '../lib/useGpx'
 import NotFound from './NotFound'
 
@@ -105,13 +105,9 @@ export default function PlanDetail() {
             </thead>
             <tbody>
               {options.map((option, i) => {
-                const totals = tripTotals(option, tracks)
-                const perDayKm =
-                  totals.distanceM === null
-                    ? null
-                    : totals.distanceM / 1000 / option.days.length
-                const perDayM =
-                  totals.ascentM === null ? null : totals.ascentM / option.days.length
+                const totals = staticTripTotals(option)
+                const perDayKm = totals.distanceM / 1000 / option.days.length
+                const perDayM = totals.ascentM / option.days.length
                 return (
                   <tr
                     key={option.id}
@@ -129,14 +125,10 @@ export default function PlanDetail() {
                       </Link>
                     </th>
                     <td>{option.days.length}</td>
-                    <td>{totals.distanceM === null ? '…' : formatDistance(totals.distanceM)}</td>
+                    <td>{formatDistance(totals.distanceM)}</td>
+                    <td>{totals.ascentM.toLocaleString()} m</td>
                     <td>
-                      {totals.ascentM === null ? '…' : `${totals.ascentM.toLocaleString()} m`}
-                    </td>
-                    <td>
-                      {perDayKm === null || perDayM === null
-                        ? '…'
-                        : `${Math.round(perDayKm)} km · ${Math.round(perDayM).toLocaleString()} m`}
+                      {Math.round(perDayKm)} km · {Math.round(perDayM).toLocaleString()} m
                     </td>
                     <td className="muted">{option.season ?? '—'}</td>
                   </tr>
