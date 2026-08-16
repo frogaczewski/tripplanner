@@ -452,6 +452,132 @@
     ]
   },
   {
+    "id": "manaslu-2025",
+    "title": "Around Manaslu",
+    "region": "Budhi Gandaki valley, Nepal",
+    "status": "completed",
+    "startDate": "2025-10-21",
+    "endDate": "2025-10-30",
+    "summary": "Ten days trekking the Manaslu approach, 21–30 October 2025 — 160.5 km and 7,606 m from Machhakhola up the Budhi Gandaki to Samdo, with an acclimatisation day to Manaslu Base Camp at 4,855 m, then back out the same valley. These tracks do not cross Larke La: Samdo is the furthest point and day 8 turns around.",
+    "days": [
+      {
+        "id": "day-1",
+        "date": "2025-10-21",
+        "title": "Machhakhola → Jagat",
+        "summary": "Into the Budhi Gandaki gorge — 18.5 km and 803 m, climbing from 888 m to Jagat at 1,352 m.",
+        "gpx": "/gpx/manaslu-2025/day-1.gpx",
+        "stayingAt": "Jagat",
+        "highlights": [
+          "18.5 km, 803 m up"
+        ]
+      },
+      {
+        "id": "day-2",
+        "date": "2025-10-22",
+        "title": "Jagat → Deng",
+        "summary": "Longer and steadier up the valley, 19.6 km to Deng at 1,877 m.",
+        "gpx": "/gpx/manaslu-2025/day-2.gpx",
+        "stayingAt": "Deng",
+        "highlights": [
+          "19.6 km, 936 m up"
+        ]
+      },
+      {
+        "id": "day-3",
+        "date": "2025-10-23",
+        "title": "Deng → Namrung",
+        "summary": "The valley narrows and steepens: 1,243 m of climbing over 16.6 km to Namrung at 2,647 m.",
+        "gpx": "/gpx/manaslu-2025/day-3.gpx",
+        "stayingAt": "Namrung",
+        "highlights": [
+          "1,243 m up",
+          "Namrung 2,647 m"
+        ]
+      },
+      {
+        "id": "day-4",
+        "date": "2025-10-24",
+        "title": "Namrung → Shyala",
+        "summary": "Through Lho with the first big mountain views, finishing at Shyala at 3,522 m.",
+        "gpx": "/gpx/manaslu-2025/day-4.gpx",
+        "stayingAt": "Shyala",
+        "highlights": [
+          "1,162 m up",
+          "Over 3,500 m for the first time"
+        ]
+      },
+      {
+        "id": "day-5",
+        "date": "2025-10-25",
+        "title": "Shyala → Samagaon",
+        "summary": "Short on paper but the track climbs to 4,055 m on a side excursion before dropping into Samagaon at 3,537 m.",
+        "gpx": "/gpx/manaslu-2025/day-5.gpx",
+        "stayingAt": "Samagaon",
+        "highlights": [
+          "Touches 4,055 m",
+          "Samagaon 3,537 m"
+        ]
+      },
+      {
+        "id": "day-6",
+        "date": "2025-10-26",
+        "title": "Samagaon → Manaslu Base Camp → Samagaon",
+        "summary": "Acclimatisation day: out and back from Samagaon to Manaslu Base Camp at 4,855 m — the highest point of the whole trek and its biggest climbing day at 1,356 m.",
+        "gpx": "/gpx/manaslu-2025/day-6.gpx",
+        "stayingAt": "Samagaon",
+        "highlights": [
+          "High point 4,855 m — highest of the trek",
+          "Out and back from Samagaon"
+        ]
+      },
+      {
+        "id": "day-7",
+        "date": "2025-10-27",
+        "title": "Samagaon → Samdo",
+        "summary": "Shortest day of the trek at 8.1 km, up to Samdo at 3,869 m — the furthest point reached.",
+        "gpx": "/gpx/manaslu-2025/day-7.gpx",
+        "stayingAt": "Samdo",
+        "highlights": [
+          "Shortest day: 8.1 km",
+          "Turnaround point"
+        ]
+      },
+      {
+        "id": "day-8",
+        "date": "2025-10-28",
+        "title": "Samdo → Lho",
+        "summary": "Turning back down the valley, 15.6 km of almost pure descent to Lho at 3,181 m.",
+        "gpx": "/gpx/manaslu-2025/day-8.gpx",
+        "stayingAt": "Lho",
+        "highlights": [
+          "Descent day: only 238 m up"
+        ]
+      },
+      {
+        "id": "day-9",
+        "date": "2025-10-29",
+        "title": "Lho → Bihi",
+        "summary": "Longest day of the trek: 21.9 km retracing the approach down to Bihi at 2,163 m.",
+        "gpx": "/gpx/manaslu-2025/day-9.gpx",
+        "stayingAt": "Bihi",
+        "highlights": [
+          "Longest day: 21.9 km"
+        ]
+      },
+      {
+        "id": "day-10",
+        "date": "2025-10-30",
+        "title": "Bihi → Chisopani",
+        "summary": "Last day out, 15.3 km down to Chisopani at 1,692 m.",
+        "gpx": "/gpx/manaslu-2025/day-10.gpx",
+        "stayingAt": "Chisopani",
+        "highlights": [
+          "15.3 km out"
+        ]
+      }
+    ]
+  },
+  {
     "id": "cyprus-2025",
     "title": "Around Cyprus",
     "region": "Cyprus",
@@ -612,112 +738,6 @@
         "highlights": [
           "Longest day: 117.5 km",
           "Most climbing: 2,025 m"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "tatry-2026",
-    "title": "Tatra High Route",
-    "region": "Tatra Mountains, Poland",
-    "status": "planned",
-    "startDate": "2026-09-05",
-    "endDate": "2026-09-08",
-    "summary": "Four days hut-to-hut across the Polish High Tatras, finishing with Rysy — the highest point in Poland. Everything here is still up for debate, so leave notes on the days you want to change.",
-    "days": [
-      {
-        "id": "day-1",
-        "date": "2026-09-05",
-        "title": "Kuźnice → Hala Gąsienicowa",
-        "summary": "Gentle warm-up over Boczań. Cable car crowds thin out after the first hour.",
-        "gpx": "/gpx/tatry-2026/day-1.gpx",
-        "stayingAt": "Schronisko Murowaniec",
-        "highlights": [
-          "Boczań ridge",
-          "First view of Kościelec"
-        ]
-      },
-      {
-        "id": "day-2",
-        "date": "2026-09-06",
-        "title": "Hala Gąsienicowa → Zawrat → Dolina Pięciu Stawów",
-        "summary": "The chained section up to Zawrat. Bail-out is back down to Murowaniec if the rock is wet.",
-        "gpx": "/gpx/tatry-2026/day-2.gpx",
-        "stayingAt": "Schronisko w Dolinie Pięciu Stawów",
-        "highlights": [
-          "Zawrat pass, 2159 m",
-          "Chains on both sides"
-        ]
-      },
-      {
-        "id": "day-3",
-        "date": "2026-09-07",
-        "title": "Pięć Stawów → Morskie Oko → Rysy → Morskie Oko",
-        "summary": "Long day with a there-and-back on Rysy. Start before sunrise; turn around at 13:00 regardless of where we are.",
-        "gpx": "/gpx/tatry-2026/day-3.gpx",
-        "stayingAt": "Schronisko przy Morskim Oku",
-        "highlights": [
-          "Rysy, 2499 m",
-          "Descent past Czarny Staw"
-        ]
-      },
-      {
-        "id": "day-4",
-        "date": "2026-09-08",
-        "title": "Morskie Oko → Palenica Białczańska",
-        "summary": "Walk out on the asphalt road, bus back to Zakopane.",
-        "gpx": "/gpx/tatry-2026/day-4.gpx",
-        "stayingAt": "Zakopane",
-        "highlights": [
-          "Easy exit",
-          "Bus every 30 min"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "dolomites-alta-via-1",
-    "title": "Alta Via 1 — northern section",
-    "region": "Dolomites, Italy",
-    "status": "completed",
-    "startDate": "2025-07-12",
-    "endDate": "2025-07-14",
-    "summary": "Three days from Lago di Braies to Rifugio Nuvolau. Kept as a reference for how much daily ascent actually felt comfortable.",
-    "days": [
-      {
-        "id": "day-1",
-        "date": "2025-07-12",
-        "title": "Lago di Braies → Rifugio Sennes",
-        "summary": "Steep climb straight off the lake, then rolling high plateau.",
-        "gpx": "/gpx/dolomites-alta-via-1/day-1.gpx",
-        "stayingAt": "Rifugio Sennes",
-        "highlights": [
-          "Forcella Sora Forno",
-          "Rifugio Biella for lunch"
-        ]
-      },
-      {
-        "id": "day-2",
-        "date": "2025-07-13",
-        "title": "Rifugio Sennes → Rifugio Lagazuoi",
-        "summary": "Longest day of the trip. The final pull to Lagazuoi is relentless.",
-        "gpx": "/gpx/dolomites-alta-via-1/day-2.gpx",
-        "stayingAt": "Rifugio Lagazuoi",
-        "highlights": [
-          "Fanes valley",
-          "WWI tunnels near the top"
-        ]
-      },
-      {
-        "id": "day-3",
-        "date": "2025-07-14",
-        "title": "Rifugio Lagazuoi → Rifugio Nuvolau",
-        "summary": "Short half-day, mostly descent then a sharp final climb to the ridge hut.",
-        "gpx": "/gpx/dolomites-alta-via-1/day-3.gpx",
-        "stayingAt": "Rifugio Nuvolau",
-        "highlights": [
-          "Averau traverse",
-          "Sunset from Nuvolau terrace"
         ]
       }
     ]
