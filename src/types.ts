@@ -9,12 +9,8 @@ export interface TripDay {
   gpx: string
   stayingAt?: string
   highlights?: string[]
-  /**
-   * Itinerary figures, used instead of the GPX-derived ones when the GPX is a
-   * planning route rather than a recorded track — see `Trip.routeQuality`.
-   */
-  plannedDistanceKm?: number
-  plannedAscentM?: number
+  /** Optional YouTube (or other) video for this day. */
+  videoUrl?: string
 }
 
 export interface Trip {
@@ -27,12 +23,12 @@ export interface Trip {
   summary: string
   days: TripDay[]
   /**
-   * `recorded` (the default) means the GPX are real tracks and every figure on
-   * the page is measured from them. `planned-waypoints` means the GPX hold only
-   * unrouted via-points: the map line is straight between towns, so distance and
-   * ascent come from the itinerary and the measured-only figures are suppressed.
+   * `recorded` (the default) means the GPX came off a device. `planned-routed`
+   * means the line was produced by a router over OSM ways — the distances and
+   * climbs are real measurements of that line, but nobody has ridden it yet, so
+   * surfaces and passability are only as good as OSM.
    */
-  routeQuality?: 'recorded' | 'planned-waypoints'
+  routeQuality?: 'recorded' | 'planned-routed'
   /** Free text such as "Best Oct–Apr", shown on planned trips. */
   season?: string
   /**
@@ -44,6 +40,8 @@ export interface Trip {
   planId?: string
   /** Short label for this option, e.g. "Grand Atlas Loop". Defaults to `title`. */
   optionLabel?: string
+  /** Video of the trip, shown on the trip page. */
+  videoUrl?: string
 }
 
 /** A trip being planned, with several candidate itineraries to choose between. */

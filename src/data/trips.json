@@ -1,453 +1,280 @@
 [
   {
-    "id": "morocco-grand-atlas",
-    "title": "Grand Atlas Loop (Morocco option)",
-    "region": "Morocco",
+    "id": "morocco-mgoun",
+    "title": "M'Goun & Lakes traverse (Morocco option)",
+    "optionLabel": "M'Goun & Lakes traverse",
+    "region": "High Atlas, Morocco",
     "status": "planned",
     "startDate": "2026-10-24",
     "endDate": "2026-10-30",
-    "summary": "Both great passes and the Anti-Atlas in between — a closed loop from Marrakech. One of five candidate itineraries for the same late-October 2026 Morocco trip — 660 km and 7,450 m over 7 days, high point 2,260 m. Leave comments to argue for or against this one.",
-    "routeQuality": "planned-waypoints",
-    "season": "Best Oct–Apr · avoid Jun–Aug (Ouarzazate side regularly 40 °C+)",
+    "summary": "Demnate to Boumalne Dadès across the M'Goun massif and the lake plateau — Aït Bouguemez, the Ahansal gorges, Imilchil and the Dadès. The longest and highest of the three. 508 km and 11,755 m over 7 days — 73 km and 1,679 m a day, 78% paved. One-way, Demnate to Boumalne Dadès.",
+    "routeQuality": "planned-routed",
+    "season": "Best Apr–Jun and Sep–Oct · the high plateau is snowbound in winter",
+    "planId": "morocco-2026",
     "days": [
       {
         "id": "day-1",
         "date": "2026-10-24",
-        "title": "Marrakech → Ouirgane",
-        "summary": "Easy opener. Flat to Tahannaout, then the valley tilts up through Asni.",
-        "gpx": "/gpx/morocco-grand-atlas/day-1.gpx",
-        "stayingAt": "Ouirgane",
+        "title": "Demnate → Aït Mhamed",
+        "summary": "Valley road out of Demnate onto the Aït Mhamed plateau.",
+        "gpx": "/gpx/morocco-mgoun/day-1.gpx",
+        "stayingAt": "Aït Mhamed",
         "highlights": [
-          "75 km, 1,000 m up"
-        ],
-        "plannedDistanceKm": 75,
-        "plannedAscentM": 1000
+          "83 km, 1,715 m up",
+          "98% paved / 2% unpaved",
+          "High point 1,679 m"
+        ]
       },
       {
         "id": "day-2",
         "date": "2026-10-25",
-        "title": "Ouirgane → Oulad Berhil",
-        "summary": "Tizi n'Test — 30 km of climbing on a narrow balcony road, then a 60 km descent. Carry everything; the south side has almost nothing.",
-        "gpx": "/gpx/morocco-grand-atlas/day-2.gpx",
-        "stayingAt": "Oulad Berhil",
+        "title": "Aït Mhamed → Tabant (Aït Bouguemez)",
+        "summary": "Over the rim into Aït Bouguemez — the Happy Valley. Mostly piste, tops out at 2,628 m.",
+        "gpx": "/gpx/morocco-mgoun/day-2.gpx",
+        "stayingAt": "Tabant (Aït Bouguemez)",
         "highlights": [
-          "110 km, 1,350 m up"
-        ],
-        "plannedDistanceKm": 110,
-        "plannedAscentM": 1350
+          "49 km, 1,412 m up",
+          "16% paved / 84% unpaved",
+          "High point 2,624 m"
+        ]
       },
       {
         "id": "day-3",
         "date": "2026-10-26",
-        "title": "Oulad Berhil → Taliouine",
-        "summary": "Souss valley, gently uphill all day into the saffron country.",
-        "gpx": "/gpx/morocco-grand-atlas/day-3.gpx",
-        "stayingAt": "Taliouine",
+        "title": "Tabant → Zaouiat Ahansal",
+        "summary": "The high crossing to Zaouiat Ahansal at 2,767 m, the highest col of the option.",
+        "gpx": "/gpx/morocco-mgoun/day-3.gpx",
+        "stayingAt": "Zaouiat Ahansal",
         "highlights": [
-          "85 km, 900 m up"
-        ],
-        "plannedDistanceKm": 85,
-        "plannedAscentM": 900
+          "62 km, 2,054 m up",
+          "64% paved / 36% unpaved",
+          "High point 2,766 m"
+        ]
       },
       {
         "id": "day-4",
         "date": "2026-10-27",
-        "title": "Taliouine → Tazenakht",
-        "summary": "Tizi n'Taghatine, ~1,880 m. Empty, high, exposed — the quietest day of the loop.",
-        "gpx": "/gpx/morocco-grand-atlas/day-4.gpx",
-        "stayingAt": "Tazenakht",
+        "title": "Zaouiat Ahansal → Anergui",
+        "summary": "Down the Ahansal gorges to Anergui. Roughly half unpaved.",
+        "gpx": "/gpx/morocco-mgoun/day-4.gpx",
+        "stayingAt": "Anergui",
         "highlights": [
-          "85 km, 950 m up"
-        ],
-        "plannedDistanceKm": 85,
-        "plannedAscentM": 950
+          "67 km, 1,698 m up",
+          "51% paved / 49% unpaved",
+          "High point 2,575 m"
+        ]
       },
       {
         "id": "day-5",
         "date": "2026-10-28",
-        "title": "Tazenakht → Ouarzazate",
-        "summary": "Desert plateau. Wind is the whole story here, not the gradient.",
-        "gpx": "/gpx/morocco-grand-atlas/day-5.gpx",
-        "stayingAt": "Ouarzazate",
+        "title": "Anergui → Imilchil",
+        "summary": "Biggest climbing day at 2,224 m, up to the lakes at Imilchil.",
+        "gpx": "/gpx/morocco-mgoun/day-5.gpx",
+        "stayingAt": "Imilchil",
         "highlights": [
-          "95 km, 700 m up"
-        ],
-        "plannedDistanceKm": 95,
-        "plannedAscentM": 700
+          "71 km, 2,324 m up",
+          "95% paved / 5% unpaved",
+          "High point 2,509 m"
+        ]
       },
       {
         "id": "day-6",
         "date": "2026-10-29",
-        "title": "Ouarzazate → Telouet",
-        "summary": "Aït Benhaddou, then the old kasbah road climbing steadily to Telouet.",
-        "gpx": "/gpx/morocco-grand-atlas/day-6.gpx",
-        "stayingAt": "Telouet",
+        "title": "Imilchil → Agoudal → Msemrir",
+        "summary": "Long plateau day past Agoudal and Aït Hani to Msemrir.",
+        "gpx": "/gpx/morocco-mgoun/day-6.gpx",
+        "stayingAt": "Msemrir",
         "highlights": [
-          "90 km, 1,400 m up"
-        ],
-        "plannedDistanceKm": 90,
-        "plannedAscentM": 1400
+          "117 km, 1,615 m up",
+          "93% paved / 7% unpaved",
+          "High point 2,667 m"
+        ]
       },
       {
         "id": "day-7",
         "date": "2026-10-30",
-        "title": "Telouet → Marrakech",
-        "summary": "Tizi n'Tichka from the quiet eastern side, then roughly 100 km of descent into the city.",
-        "gpx": "/gpx/morocco-grand-atlas/day-7.gpx",
-        "stayingAt": "Marrakech",
+        "title": "Msemrir → Boumalne Dadès",
+        "summary": "Descent of the Dadès to finish at Boumalne.",
+        "gpx": "/gpx/morocco-mgoun/day-7.gpx",
+        "stayingAt": "Boumalne Dadès",
         "highlights": [
-          "120 km, 1,150 m up"
-        ],
-        "plannedDistanceKm": 120,
-        "plannedAscentM": 1150
+          "59 km, 937 m up",
+          "93% paved / 7% unpaved",
+          "High point 2,054 m"
+        ]
       }
-    ],
-    "planId": "morocco-2026",
-    "optionLabel": "Grand Atlas Loop"
+    ]
   },
   {
-    "id": "morocco-climbing-camp",
-    "title": "Marrakech Climbing Camp (Morocco option)",
-    "region": "Morocco",
+    "id": "morocco-ahansal-loop",
+    "title": "Ahansal & Happy Valley loop (Morocco option)",
+    "optionLabel": "Ahansal & Happy Valley loop",
+    "region": "High Atlas, Morocco",
     "status": "planned",
     "startDate": "2026-10-24",
     "endDate": "2026-10-28",
-    "summary": "Five days, two bases, no luggage — the biggest climbs the High Atlas has near a city. One of five candidate itineraries for the same late-October 2026 Morocco trip — 525 km and 7,000 m over 5 days, high point 2,620 m. Leave comments to argue for or against this one.",
-    "routeQuality": "planned-waypoints",
-    "season": "Best Mar–May and Oct–Nov · Oukaïmeden can hold snow into March",
+    "summary": "A closed loop from Demnate through Bin el Ouidane, the Ahansal gorges and Aït Bouguemez. Shortest option and the hardest per day — no transfers at either end. 433 km and 10,090 m over 5 days — 87 km and 2,018 m a day, 71% paved. Closed loop from Demnate.",
+    "routeQuality": "planned-routed",
+    "season": "Best Apr–Jun and Sep–Oct · Ahansal gorges flood after heavy rain",
+    "planId": "morocco-2026",
     "days": [
       {
         "id": "day-1",
         "date": "2026-10-24",
-        "title": "Marrakech loop",
-        "summary": "Oukaïmeden, 2,620 m — the hardest single climb in the range: ~40 km of ascent, the last 15 at 7–8%. Closest thing to an Alpine col in Morocco.",
-        "gpx": "/gpx/morocco-climbing-camp/day-1.gpx",
-        "stayingAt": "Marrakech",
+        "title": "Demnate → Azilal → Bin el Ouidane",
+        "summary": "North to the Bin el Ouidane reservoir via Azilal.",
+        "gpx": "/gpx/morocco-ahansal-loop/day-1.gpx",
+        "stayingAt": "Bin el Ouidane",
         "highlights": [
-          "150 km, 2,400 m up"
-        ],
-        "plannedDistanceKm": 150,
-        "plannedAscentM": 2400
+          "110 km, 2,043 m up",
+          "78% paved / 22% unpaved",
+          "High point 1,527 m"
+        ]
       },
       {
         "id": "day-2",
         "date": "2026-10-25",
-        "title": "Marrakech loop",
-        "summary": "Recovery loop on the foothill road via the lake. Rolling, never steep.",
-        "gpx": "/gpx/morocco-climbing-camp/day-2.gpx",
-        "stayingAt": "Marrakech",
+        "title": "Bin el Ouidane → Zaouiat Ahansal",
+        "summary": "The crux: 110 km and 3,324 m into Zaouiat Ahansal.",
+        "gpx": "/gpx/morocco-ahansal-loop/day-2.gpx",
+        "stayingAt": "Zaouiat Ahansal",
         "highlights": [
-          "105 km, 900 m up"
-        ],
-        "plannedDistanceKm": 105,
-        "plannedAscentM": 900
+          "109 km, 3,429 m up",
+          "71% paved / 29% unpaved",
+          "High point 1,888 m"
+        ]
       },
       {
         "id": "day-3",
         "date": "2026-10-26",
-        "title": "Marrakech → Ouirgane",
-        "summary": "Transfer ride to the second base. Short enough to do after a late start.",
-        "gpx": "/gpx/morocco-climbing-camp/day-3.gpx",
-        "stayingAt": "Ouirgane",
+        "title": "Zaouiat Ahansal → Tabant",
+        "summary": "Over the 2,767 m col into Aït Bouguemez.",
+        "gpx": "/gpx/morocco-ahansal-loop/day-3.gpx",
+        "stayingAt": "Tabant",
         "highlights": [
-          "75 km, 1,100 m up"
-        ],
-        "plannedDistanceKm": 75,
-        "plannedAscentM": 1100
+          "62 km, 2,035 m up",
+          "64% paved / 36% unpaved",
+          "High point 2,766 m"
+        ]
       },
       {
         "id": "day-4",
         "date": "2026-10-27",
-        "title": "Ouirgane loop",
-        "summary": "Tizi n'Test out and back. Climb it in the morning, descend before the heat.",
-        "gpx": "/gpx/morocco-climbing-camp/day-4.gpx",
-        "stayingAt": "Ouirgane",
+        "title": "Tabant → Aït Mhamed",
+        "summary": "The piste day — 84% unpaved over the 2,628 m rim to Aït Mhamed.",
+        "gpx": "/gpx/morocco-ahansal-loop/day-4.gpx",
+        "stayingAt": "Aït Mhamed",
         "highlights": [
-          "110 km, 1,900 m up"
-        ],
-        "plannedDistanceKm": 110,
-        "plannedAscentM": 1900
+          "49 km, 1,207 m up",
+          "16% paved / 84% unpaved",
+          "High point 2,624 m"
+        ]
       },
       {
         "id": "day-5",
         "date": "2026-10-28",
-        "title": "Ouirgane → Marrakech",
-        "summary": "Back to the city the long way round, through Amizmiz.",
-        "gpx": "/gpx/morocco-climbing-camp/day-5.gpx",
-        "stayingAt": "Marrakech",
+        "title": "Aït Mhamed → Azilal → Demnate",
+        "summary": "Rolling road back through Azilal to close the loop at Demnate.",
+        "gpx": "/gpx/morocco-ahansal-loop/day-5.gpx",
+        "stayingAt": "Demnate",
         "highlights": [
-          "85 km, 700 m up"
-        ],
-        "plannedDistanceKm": 85,
-        "plannedAscentM": 700
+          "104 km, 1,376 m up",
+          "95% paved / 5% unpaved",
+          "High point 1,799 m"
+        ]
       }
-    ],
-    "planId": "morocco-2026",
-    "optionLabel": "Marrakech Climbing Camp"
+    ]
   },
   {
-    "id": "morocco-atlas-gorges",
-    "title": "Atlas & Gorges (Morocco option)",
-    "region": "Morocco",
+    "id": "morocco-west-atlas",
+    "title": "Toubkal to Telouet (Morocco option)",
+    "optionLabel": "Toubkal to Telouet",
+    "region": "High Atlas, Morocco",
     "status": "planned",
     "startDate": "2026-10-24",
     "endDate": "2026-10-29",
-    "summary": "Point to point over Tichka, then east along the Valley of Roses into Dadès and Todra. One of five candidate itineraries for the same late-October 2026 Morocco trip — 520 km and 6,300 m over 6 days, high point 2,260 m. Leave comments to argue for or against this one.",
-    "routeQuality": "planned-waypoints",
-    "season": "Best Oct–Apr · the gorges are high and cold at night, the plateau hot by day",
+    "summary": "Asni to Demnate across the western High Atlas — Toubkal foothills, the Amizmiz piste, then Tizi n'Tichka and Telouet. The best surface mix of the three. 460 km and 11,132 m over 6 days — 77 km and 1,855 m a day, 61% paved. One-way, Asni to Demnate.",
+    "routeQuality": "planned-routed",
+    "season": "Best Apr–Jun and Sep–Oct · Tizi n’Test closes in snow",
+    "planId": "morocco-2026",
     "days": [
       {
         "id": "day-1",
         "date": "2026-10-24",
-        "title": "Marrakech → Taddert",
-        "summary": "Flat out of the city, then the Tichka road starts climbing in earnest at Aït Ourir.",
-        "gpx": "/gpx/morocco-atlas-gorges/day-1.gpx",
-        "stayingAt": "Taddert",
+        "title": "Asni → Ouirgane → Ijoukak",
+        "summary": "Easy opener down the Ouirgane valley to Ijoukak.",
+        "gpx": "/gpx/morocco-west-atlas/day-1.gpx",
+        "stayingAt": "Ijoukak",
         "highlights": [
-          "90 km, 1,300 m up"
-        ],
-        "plannedDistanceKm": 90,
-        "plannedAscentM": 1300
+          "50 km, 928 m up",
+          "97% paved / 3% unpaved",
+          "High point 1,217 m"
+        ]
       },
       {
         "id": "day-2",
         "date": "2026-10-25",
-        "title": "Taddert → Ouarzazate",
-        "summary": "Tizi n'Tichka before breakfast (2,260 m, ~20 km from Taddert), then all downhill to the desert.",
-        "gpx": "/gpx/morocco-atlas-gorges/day-2.gpx",
-        "stayingAt": "Ouarzazate",
+        "title": "Ijoukak → Amizmiz",
+        "summary": "North over the hills to Amizmiz, a third of it unpaved.",
+        "gpx": "/gpx/morocco-west-atlas/day-2.gpx",
+        "stayingAt": "Amizmiz",
         "highlights": [
-          "110 km, 900 m up"
-        ],
-        "plannedDistanceKm": 110,
-        "plannedAscentM": 900
+          "78 km, 1,522 m up",
+          "66% paved / 34% unpaved",
+          "High point 1,369 m"
+        ]
       },
       {
         "id": "day-3",
         "date": "2026-10-26",
-        "title": "Ouarzazate → Boumalne Dadès",
-        "summary": "The Valley of Roses road — palmeries, kasbahs, steady false flat east.",
-        "gpx": "/gpx/morocco-atlas-gorges/day-3.gpx",
-        "stayingAt": "Boumalne Dadès",
+        "title": "Amizmiz → Asni",
+        "summary": "The piste back east to Asni — 92% unpaved, the most off-road day here.",
+        "gpx": "/gpx/morocco-west-atlas/day-3.gpx",
+        "stayingAt": "Asni",
         "highlights": [
-          "100 km, 900 m up"
-        ],
-        "plannedDistanceKm": 100,
-        "plannedAscentM": 900
+          "39 km, 1,054 m up",
+          "8% paved / 92% unpaved",
+          "High point 1,497 m"
+        ]
       },
       {
         "id": "day-4",
         "date": "2026-10-27",
-        "title": "Boumalne Dadès loop",
-        "summary": "Dadès Gorge out and back, through the hairpins above Tamlalt to Msemrir at ~2,000 m. The best road of the trip.",
-        "gpx": "/gpx/morocco-atlas-gorges/day-4.gpx",
-        "stayingAt": "Boumalne Dadès",
+        "title": "Asni → Tighza",
+        "summary": "The big one: 129 km and 3,863 m east to Tighza.",
+        "gpx": "/gpx/morocco-west-atlas/day-4.gpx",
+        "stayingAt": "Tighza",
         "highlights": [
-          "90 km, 1,500 m up"
-        ],
-        "plannedDistanceKm": 90,
-        "plannedAscentM": 1500
+          "128 km, 3,954 m up",
+          "53% paved / 47% unpaved",
+          "High point 2,617 m"
+        ]
       },
       {
         "id": "day-5",
         "date": "2026-10-28",
-        "title": "Boumalne Dadès → Tinghir",
-        "summary": "Deliberately short. Half day on the bike, half day off it.",
-        "gpx": "/gpx/morocco-atlas-gorges/day-5.gpx",
-        "stayingAt": "Tinghir",
+        "title": "Tighza → Telouet",
+        "summary": "Short road day up to Telouet.",
+        "gpx": "/gpx/morocco-west-atlas/day-5.gpx",
+        "stayingAt": "Telouet",
         "highlights": [
-          "55 km, 500 m up"
-        ],
-        "plannedDistanceKm": 55,
-        "plannedAscentM": 500
+          "45 km, 780 m up",
+          "99% paved / 1% unpaved",
+          "High point 2,155 m"
+        ]
       },
       {
         "id": "day-6",
         "date": "2026-10-29",
-        "title": "Tinghir loop",
-        "summary": "Todra Gorge and up to Tamtattouchte — 300 m rock walls, then open high country.",
-        "gpx": "/gpx/morocco-atlas-gorges/day-6.gpx",
-        "stayingAt": "Tinghir",
+        "title": "Telouet → Demnate",
+        "summary": "Long finish over the Tichka side to Demnate, nearly half unpaved.",
+        "gpx": "/gpx/morocco-west-atlas/day-6.gpx",
+        "stayingAt": "Demnate",
         "highlights": [
-          "75 km, 1,200 m up"
-        ],
-        "plannedDistanceKm": 75,
-        "plannedAscentM": 1200
-      }
-    ],
-    "planId": "morocco-2026",
-    "optionLabel": "Atlas & Gorges"
-  },
-  {
-    "id": "morocco-anti-atlas",
-    "title": "Anti-Atlas Loop (Morocco option)",
-    "region": "Morocco",
-    "status": "planned",
-    "startDate": "2026-10-24",
-    "endDate": "2026-10-28",
-    "summary": "Agadir, Tafraoute and the Ameln valley — quiet roads, granite, winter sun. One of five candidate itineraries for the same late-October 2026 Morocco trip — 470 km and 5,600 m over 5 days, high point 1,500 m. Leave comments to argue for or against this one.",
-    "routeQuality": "planned-waypoints",
-    "season": "Best Nov–Mar · the only one of these that works in deep winter",
-    "days": [
-      {
-        "id": "day-1",
-        "date": "2026-10-24",
-        "title": "Agadir → Aït Baha",
-        "summary": "Out of the coastal sprawl quickly, then rolling argan country.",
-        "gpx": "/gpx/morocco-anti-atlas/day-1.gpx",
-        "stayingAt": "Aït Baha",
-        "highlights": [
-          "110 km, 1,300 m up"
-        ],
-        "plannedDistanceKm": 110,
-        "plannedAscentM": 1300
-      },
-      {
-        "id": "day-2",
-        "date": "2026-10-25",
-        "title": "Aït Baha → Tafraoute",
-        "summary": "The hard day: Tizi Mlil at ~1,500 m on an empty road, then down into the Tafraoute bowl.",
-        "gpx": "/gpx/morocco-anti-atlas/day-2.gpx",
-        "stayingAt": "Tafraoute",
-        "highlights": [
-          "90 km, 1,600 m up"
-        ],
-        "plannedDistanceKm": 90,
-        "plannedAscentM": 1600
-      },
-      {
-        "id": "day-3",
-        "date": "2026-10-26",
-        "title": "Tafraoute loop",
-        "summary": "Ameln valley loop under the Jbel El Kest wall, over Tizi n'Tarakatine, past the painted rocks.",
-        "gpx": "/gpx/morocco-anti-atlas/day-3.gpx",
-        "stayingAt": "Tafraoute",
-        "highlights": [
-          "70 km, 1,200 m up"
-        ],
-        "plannedDistanceKm": 70,
-        "plannedAscentM": 1200
-      },
-      {
-        "id": "day-4",
-        "date": "2026-10-27",
-        "title": "Tafraoute → Tiznit",
-        "summary": "West over the last of the granite, then a long drop to the plain.",
-        "gpx": "/gpx/morocco-anti-atlas/day-4.gpx",
-        "stayingAt": "Tiznit",
-        "highlights": [
-          "105 km, 900 m up"
-        ],
-        "plannedDistanceKm": 105,
-        "plannedAscentM": 900
-      },
-      {
-        "id": "day-5",
-        "date": "2026-10-28",
-        "title": "Tiznit → Agadir",
-        "summary": "Coast road home past Aglou and the Massa estuary. Watch the afternoon headwind.",
-        "gpx": "/gpx/morocco-anti-atlas/day-5.gpx",
-        "stayingAt": "Agadir",
-        "highlights": [
-          "95 km, 600 m up"
-        ],
-        "plannedDistanceKm": 95,
-        "plannedAscentM": 600
-      }
-    ],
-    "planId": "morocco-2026",
-    "optionLabel": "Anti-Atlas Loop"
-  },
-  {
-    "id": "morocco-alpine-grade",
-    "title": "Alpine-grade (Morocco option)",
-    "optionLabel": "Alpine-grade",
-    "region": "Morocco",
-    "status": "planned",
-    "startDate": "2026-10-24",
-    "endDate": "2026-10-29",
-    "summary": "Built to match the daily load of the French Alps traverse — 600 km and 8,700 m over 6 days, i.e. 100 km and 1450 m a day against the Alps’ 100 km and 1,662 m. Marrakech-based: Oukaïmeden, then Tizi n’Test from Ouirgane, then the Tichka road to Taddert and back. Assembled by recombining stages from the other options rather than surveying new roads.",
-    "routeQuality": "planned-waypoints",
-    "season": "Best Mar–May and Oct–Nov · Oukaïmeden can hold snow into March",
-    "planId": "morocco-2026",
-    "days": [
-      {
-        "id": "day-1",
-        "date": "2026-10-24",
-        "title": "Marrakech → Oukaïmeden loop",
-        "summary": "Oukaïmeden, 2,620 m — the hardest single climb in the range: ~40 km of ascent, the last 15 at 7–8%. Closest thing to an Alpine col in Morocco.",
-        "gpx": "/gpx/morocco-alpine-grade/day-1.gpx",
-        "stayingAt": "Oukaïmeden loop",
-        "highlights": [
-          "150 km, 2,400 m up"
-        ],
-        "plannedDistanceKm": 150,
-        "plannedAscentM": 2400
-      },
-      {
-        "id": "day-2",
-        "date": "2026-10-25",
-        "title": "Marrakech → Ouirgane",
-        "summary": "Transfer ride to the second base. Short enough to do after a late start.",
-        "gpx": "/gpx/morocco-alpine-grade/day-2.gpx",
-        "stayingAt": "Ouirgane",
-        "highlights": [
-          "75 km, 1,100 m up"
-        ],
-        "plannedDistanceKm": 75,
-        "plannedAscentM": 1100
-      },
-      {
-        "id": "day-3",
-        "date": "2026-10-26",
-        "title": "Ouirgane → Tizi n’Test loop",
-        "summary": "Tizi n'Test out and back. Climb it in the morning, descend before the heat.",
-        "gpx": "/gpx/morocco-alpine-grade/day-3.gpx",
-        "stayingAt": "Tizi n’Test loop",
-        "highlights": [
-          "110 km, 1,900 m up"
-        ],
-        "plannedDistanceKm": 110,
-        "plannedAscentM": 1900
-      },
-      {
-        "id": "day-4",
-        "date": "2026-10-27",
-        "title": "Ouirgane → Marrakech",
-        "summary": "Back to the city the long way round, through Amizmiz.",
-        "gpx": "/gpx/morocco-alpine-grade/day-4.gpx",
-        "stayingAt": "Marrakech",
-        "highlights": [
-          "85 km, 700 m up"
-        ],
-        "plannedDistanceKm": 85,
-        "plannedAscentM": 700
-      },
-      {
-        "id": "day-5",
-        "date": "2026-10-28",
-        "title": "Marrakech → Taddert",
-        "summary": "Flat out of the city, then the Tichka road starts climbing in earnest at Aït Ourir.",
-        "gpx": "/gpx/morocco-alpine-grade/day-5.gpx",
-        "stayingAt": "Taddert",
-        "highlights": [
-          "90 km, 1,300 m up"
-        ],
-        "plannedDistanceKm": 90,
-        "plannedAscentM": 1300
-      },
-      {
-        "id": "day-6",
-        "date": "2026-10-29",
-        "title": "Taddert → Marrakech",
-        "summary": "Flat out of the city, then the Tichka road starts climbing in earnest at Aït Ourir. Ridden in the reverse direction.",
-        "gpx": "/gpx/morocco-alpine-grade/day-6.gpx",
-        "stayingAt": "Marrakech",
-        "highlights": [
-          "90 km, 1,300 m up"
-        ],
-        "plannedDistanceKm": 90,
-        "plannedAscentM": 1300
+          "120 km, 2,894 m up",
+          "55% paved / 45% unpaved",
+          "High point 2,540 m"
+        ]
       }
     ]
   },
@@ -575,7 +402,8 @@
           "15.3 km out"
         ]
       }
-    ]
+    ],
+    "videoUrl": "https://youtu.be/Qh4UxiGJELQ"
   },
   {
     "id": "cyprus-2025",
@@ -657,7 +485,8 @@
           "Closes the loop"
         ]
       }
-    ]
+    ],
+    "videoUrl": "https://youtu.be/thTDtxTBEA4"
   },
   {
     "id": "alps-2026",

@@ -36,6 +36,43 @@ body {
   line-height: 1.55;
 }
 
+/*
+ * The illustration sits behind everything, anchored to the bottom where its
+ * detail is, and fades out upward so headings stay on flat colour. It lives on
+ * a pseudo-element rather than `body` so the two themes can dial its strength
+ * independently — at full strength it would swamp the dark palette.
+ */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: url('/trip-background.jpg') no-repeat center bottom / cover;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 55%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 55%);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body::before {
+    opacity: 0.12;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) and (min-width: 900px) {
+  body::before {
+    background-attachment: fixed;
+  }
+}
+
+.site-title img {
+  height: 22px;
+  width: 22px;
+  vertical-align: -4px;
+  margin-right: 8px;
+}
+
 a {
   color: var(--accent);
 }
@@ -627,4 +664,23 @@ button:disabled {
 
 .compare-table tbody tr:hover {
   background: var(--bg);
+}
+
+/* Responsive 16:9 video embed on a trip page. */
+.video-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #000;
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }

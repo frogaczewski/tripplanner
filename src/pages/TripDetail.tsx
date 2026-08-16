@@ -4,10 +4,16 @@ import Comments from '../components/Comments'
 import MapView, { type MapLayer } from '../components/MapView'
 import { getTrip } from '../data/trips'
 import { formatDistance, formatDuration } from '../lib/gpx'
-import { dayStats, isPlanned, tripTotals } from '../lib/stats'
+import { isPlannedRoute, tripTotals } from '../lib/stats'
 import { useTracks } from '../lib/useGpx'
 import { DAY_COLORS } from '../lib/colors'
 import NotFound from './NotFound'
+
+/** youtu.be/ID and watch?v=ID both need turning into the privacy-friendly embed URL. */
+function embedUrl(url: string): string {
+  const id = /youtu\.be\/([\w-]+)/.exec(url)?.[1] ?? /[?&]v=([\w-]+)/.exec(url)?.[1]
+  return id ? `https://www.youtube-nocookie.com/embed/${id}` : url
+}
 
 export default function TripDetail() {
   const { tripId } = useParams()
@@ -42,7 +48,7 @@ export default function TripDetail() {
   if (!trip) return <NotFound />
 
   const totals = tripTotals(trip, tracks)
-  const planned = isPlanned(trip)
+  const planned = isPlannedRoute(trip)
   const dash = (value: string | null) => (loading && value === null ? '…' : (value ?? '—'))
 
   return (
@@ -69,11 +75,11 @@ export default function TripDetail() {
             <dd>{trip.days.length}</dd>
           </div>
           <div>
-            <dt>{planned ? 'Distance (est.)' : 'Distance'}</dt>
+            <dt>Distance</dt>
             <dd>{dash(totals.distanceM === null ? null : formatDistance(totals.distanceM))}</dd>
           </div>
           <div>
-            <dt>{planned ? 'Ascent (est.)' : 'Ascent'}</dt>
+            <dt>Ascent</dt>
             <dd>{dash(totals.ascentM === null ? null : `${totals.ascentM.toLocaleString()} m`)}</dd>
           </div>
           <div>
@@ -85,11 +91,27 @@ export default function TripDetail() {
 
       {planned && (
         <p className="route-note">
-          <strong>Planning route.</strong> The GPX hold via-points only and are not
-          snapped to roads, so the map draws straight lines between towns. Distance and
-          ascent are the itinerary&rsquo;s own estimates, not measurements. Import a day
-          into Komoot, RideWithGPS or Garmin Connect to get the real routed line.
+          <strong>Routed plan, not yet ridden.</strong> The line follows real roads and
+          tracks (routed with BRouter&rsquo;s gravel profile over OpenStreetMap), so the
+          distances and climbs below are measured from it. What it cannot tell you is
+          whether a piste is rideable on the day — surfaces come from OSM tags and the
+          high cols hold snow well into spring.
         </p>
+      )}
+
+      {trip.videoUrl && (
+        <section>
+          <h2 className="section-title">Video</h2>
+          <div className="video-embed">
+            <iframe
+              src={embedUrl(trip.videoUrl)}
+              title={`${trip.title} — video`}
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
+        </section>
       )}
 
       <section>
@@ -109,7 +131,7 @@ export default function TripDetail() {
         <ul className="day-list">
           {trip.days.map((day, i) => {
             const track = tracks.get(day.gpx)
-            const stats = dayStats(trip, day, track)
+            const stats = track?.stats
             const color = DAY_COLORS[i % DAY_COLORS.length]
             return (
               <li
@@ -135,29 +157,23 @@ export default function TripDetail() {
                     <p className="muted">{day.summary}</p>
                     <dl className="stat-row stat-row-compact">
                       <div>
-                        <dt>{stats.estimated ? 'Distance (est.)' : 'Distance'}</dt>
-                        <dd>
-                          {stats.distanceM === null
-                            ? dash(null)
-                            : formatDistance(stats.distanceM)}
-                        </dd>
+                        <dt>Distance</dt>
+                        <dd>{stats ? formatDistance(stats.distanceM) : dash(null)}</dd>
                       </div>
                       <div>
-                        <dt>{stats.estimated ? 'Ascent (est.)' : 'Ascent'}</dt>
-                        <dd>{stats.ascentM === null ? dash(null) : `${stats.ascentM} m`}</dd>
+                        <dt>Ascent</dt>
+                        <dd>{stats ? `${stats.ascentM} m` : dash(null)}</dd>
                       </div>
                       <div>
                         <dt>Descent</dt>
-                        <dd>
-                          {stats.descentM === null ? dash(null) : `${stats.descentM} m`}
-                        </dd>
+                        <dd>{stats ? `${stats.descentM} m` : dash(null)}</dd>
                       </div>
                       <div>
                         <dt>Time</dt>
                         <dd>
-                          {stats.durationS === null
-                            ? dash(null)
-                            : formatDuration(stats.durationS)}
+                          {stats && stats.durationS !== null
+                            ? formatDuration(stats.durationS)
+                            : dash(null)}
                         </dd>
                       </div>
                     </dl>

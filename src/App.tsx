@@ -10,7 +10,8 @@ export default function App() {
     <>
       <header className="site-header">
         <Link to="/" className="site-title">
-          🗺️ Trip Planner
+          <img src="/icon-trip.png" alt="" width={22} height={22} />
+          Trip Planner
         </Link>
       </header>
       <main>

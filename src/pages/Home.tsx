@@ -18,16 +18,9 @@ function dateRange(startDate: string, endDate: string): string {
 /** Shortest and longest option, so a plan card still says something concrete. */
 function optionSpread(options: Trip[]): string {
   const days = options.map((o) => o.days.length)
-  const km = options.map(
-    (o) => o.days.reduce((s, d) => s + (d.plannedDistanceKm ?? 0), 0) || null,
-  )
-  const known = km.filter((k): k is number => k !== null)
-  const dayPart =
-    Math.min(...days) === Math.max(...days)
-      ? `${days[0]} days`
-      : `${Math.min(...days)}–${Math.max(...days)} days`
-  if (known.length !== options.length) return dayPart
-  return `${dayPart} · ${Math.round(Math.min(...known))}–${Math.round(Math.max(...known))} km`
+  return Math.min(...days) === Math.max(...days)
+    ? `${days[0]} days`
+    : `${Math.min(...days)}–${Math.max(...days)} days`
 }
 
 export default function Home() {
@@ -99,13 +92,13 @@ export default function Home() {
                       <dd>{trip.days.length}</dd>
                     </div>
                     <div>
-                      <dt>{totals.estimated ? 'Distance (est.)' : 'Distance'}</dt>
+                      <dt>Distance</dt>
                       <dd>
                         {totals.distanceM === null ? '…' : formatDistance(totals.distanceM)}
                       </dd>
                     </div>
                     <div>
-                      <dt>{totals.estimated ? 'Ascent (est.)' : 'Ascent'}</dt>
+                      <dt>Ascent</dt>
                       <dd>
                         {totals.ascentM === null
                           ? '…'
