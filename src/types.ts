@@ -35,6 +35,25 @@ export interface Trip {
   routeQuality?: 'recorded' | 'planned-waypoints'
   /** Free text such as "Best Oct–Apr", shown on planned trips. */
   season?: string
+  /**
+   * A planned trip is usually one of several competing itineraries for the same
+   * outing. Options sharing a `planId` are grouped behind a single card on the
+   * home page and compared side by side on the plan page. A trip that has
+   * already happened has no options, so it carries no `planId`.
+   */
+  planId?: string
+  /** Short label for this option, e.g. "Grand Atlas Loop". Defaults to `title`. */
+  optionLabel?: string
+}
+
+/** A trip being planned, with several candidate itineraries to choose between. */
+export interface Plan {
+  id: string
+  title: string
+  region: string
+  summary: string
+  /** Departure the options are costed against; individual options may differ. */
+  startDate: string
 }
 
 export type CommentKind = 'comment' | 'note'

@@ -2,6 +2,7 @@ import { Link, Route, Routes } from 'react-router-dom'
 import DayDetail from './pages/DayDetail'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
+import PlanDetail from './pages/PlanDetail'
 import TripDetail from './pages/TripDetail'
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/plans/:planId" element={<PlanDetail />} />
           <Route path="/trips/:tripId" element={<TripDetail />} />
           <Route path="/trips/:tripId/days/:dayId" element={<DayDetail />} />
           <Route path="*" element={<NotFound />} />

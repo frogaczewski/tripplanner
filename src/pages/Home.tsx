@@ -1,23 +1,38 @@
 import { Link } from 'react-router-dom'
-import { trips } from '../data/trips'
+import { homeEntries, trips } from '../data/trips'
 import { useTracks } from '../lib/useGpx'
 import { formatDistance } from '../lib/gpx'
 import { tripTotals } from '../lib/stats'
 import type { Trip } from '../types'
 
-function dateRange(trip: Trip): string {
+function dateRange(startDate: string, endDate: string): string {
   const opts: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'short' }
-  const start = new Date(trip.startDate)
-  const end = new Date(trip.endDate)
-  const year = end.getFullYear()
+  const start = new Date(startDate)
+  const end = new Date(endDate)
   return `${start.toLocaleDateString(undefined, opts)} – ${end.toLocaleDateString(
     undefined,
     opts,
-  )} ${year}`
+  )} ${end.getFullYear()}`
+}
+
+/** Shortest and longest option, so a plan card still says something concrete. */
+function optionSpread(options: Trip[]): string {
+  const days = options.map((o) => o.days.length)
+  const km = options.map(
+    (o) => o.days.reduce((s, d) => s + (d.plannedDistanceKm ?? 0), 0) || null,
+  )
+  const known = km.filter((k): k is number => k !== null)
+  const dayPart =
+    Math.min(...days) === Math.max(...days)
+      ? `${days[0]} days`
+      : `${Math.min(...days)}–${Math.max(...days)} days`
+  if (known.length !== options.length) return dayPart
+  return `${dayPart} · ${Math.round(Math.min(...known))}–${Math.round(Math.max(...known))} km`
 }
 
 export default function Home() {
   const { tracks } = useTracks(trips.flatMap((t) => t.days.map((d) => d.gpx)))
+  const entries = homeEntries()
 
   return (
     <div className="page">
@@ -32,15 +47,48 @@ export default function Home() {
       <section>
         <h2 className="section-title">Trips</h2>
         <ul className="trip-grid">
-          {trips.map((trip) => {
-            const totals = tripTotals(trip, tracks)
+          {entries.map((entry) => {
+            if (entry.kind === 'plan') {
+              const { plan, options } = entry
+              return (
+                <li key={plan.id}>
+                  <Link to={`/plans/${plan.id}`} className="trip-card">
+                    <div className="trip-card-head">
+                      <span className="badge badge-planned">planned</span>
+                      <span className="muted">
+                        {new Date(plan.startDate).toLocaleDateString(undefined, {
+                          day: 'numeric',
+                          month: 'short',
+                          year: 'numeric',
+                        })}
+                      </span>
+                    </div>
+                    <h3>{plan.title}</h3>
+                    <p className="muted">{plan.region}</p>
+                    <p className="trip-card-summary">{plan.summary}</p>
+                    <dl className="stat-row">
+                      <div>
+                        <dt>Options</dt>
+                        <dd>{options.length}</dd>
+                      </div>
+                      <div>
+                        <dt>Range</dt>
+                        <dd>{optionSpread(options)}</dd>
+                      </div>
+                    </dl>
+                  </Link>
+                </li>
+              )
+            }
 
+            const trip = entry.trip
+            const totals = tripTotals(trip, tracks)
             return (
               <li key={trip.id}>
                 <Link to={`/trips/${trip.id}`} className="trip-card">
                   <div className="trip-card-head">
                     <span className={`badge badge-${trip.status}`}>{trip.status}</span>
-                    <span className="muted">{dateRange(trip)}</span>
+                    <span className="muted">{dateRange(trip.startDate, trip.endDate)}</span>
                   </div>
                   <h3>{trip.title}</h3>
                   <p className="muted">{trip.region}</p>
@@ -53,9 +101,7 @@ export default function Home() {
                     <div>
                       <dt>{totals.estimated ? 'Distance (est.)' : 'Distance'}</dt>
                       <dd>
-                        {totals.distanceM === null
-                          ? '…'
-                          : formatDistance(totals.distanceM)}
+                        {totals.distanceM === null ? '…' : formatDistance(totals.distanceM)}
                       </dd>
                     </div>
                     <div>
