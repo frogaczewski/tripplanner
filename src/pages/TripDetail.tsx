@@ -1,9 +1,10 @@
 import { useCallback, useMemo, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import Comments from '../components/Comments'
+import DaySection from '../components/DaySection'
 import MapView, { type MapLayer } from '../components/MapView'
 import { getTrip } from '../data/trips'
-import { formatDistance, formatDuration } from '../lib/gpx'
+import { formatDistance } from '../lib/gpx'
 import { isPlannedRoute, tripTotals } from '../lib/stats'
 import { useTracks } from '../lib/useGpx'
 import { DAY_COLORS } from '../lib/colors'
@@ -19,6 +20,7 @@ export default function TripDetail() {
   const { tripId } = useParams()
   const navigate = useNavigate()
   const trip = getTrip(tripId)
+  // The whole-route map dims other days while one inline section is hovered.
   const [highlighted, setHighlighted] = useState<string | null>(null)
 
   const { tracks, loading } = useTracks(trip ? trip.days.map((d) => d.gpx) : [])
@@ -127,65 +129,20 @@ export default function TripDetail() {
       </section>
 
       <section>
-        <h2 className="section-title">Days</h2>
-        <ul className="day-list">
-          {trip.days.map((day, i) => {
-            const track = tracks.get(day.gpx)
-            const stats = track?.stats
-            const color = DAY_COLORS[i % DAY_COLORS.length]
-            return (
-              <li
-                key={day.id}
-                onMouseEnter={() => setHighlighted(day.id)}
-                onMouseLeave={() => setHighlighted(null)}
-              >
-                <Link to={`/trips/${trip.id}/days/${day.id}`} className="day-card">
-                  <span className="day-swatch" style={{ background: color }} aria-hidden="true" />
-                  <div className="day-card-main">
-                    <div className="day-card-head">
-                      <strong>
-                        Day {i + 1} · {day.title}
-                      </strong>
-                      <time dateTime={day.date}>
-                        {new Date(day.date).toLocaleDateString(undefined, {
-                          weekday: 'short',
-                          day: 'numeric',
-                          month: 'short',
-                        })}
-                      </time>
-                    </div>
-                    <p className="muted">{day.summary}</p>
-                    <dl className="stat-row stat-row-compact">
-                      <div>
-                        <dt>Distance</dt>
-                        <dd>{stats ? formatDistance(stats.distanceM) : dash(null)}</dd>
-                      </div>
-                      <div>
-                        <dt>Ascent</dt>
-                        <dd>{stats ? `${stats.ascentM} m` : dash(null)}</dd>
-                      </div>
-                      <div>
-                        <dt>Descent</dt>
-                        <dd>{stats ? `${stats.descentM} m` : dash(null)}</dd>
-                      </div>
-                      <div>
-                        <dt>Time</dt>
-                        <dd>
-                          {stats && stats.durationS !== null
-                            ? formatDuration(stats.durationS)
-                            : dash(null)}
-                        </dd>
-                      </div>
-                    </dl>
-                  </div>
-                  <span className="day-card-chevron" aria-hidden="true">
-                    →
-                  </span>
-                </Link>
-              </li>
-            )
-          })}
-        </ul>
+        <h2 className="section-title">Day by day</h2>
+        <div className="day-sections">
+          {trip.days.map((day, i) => (
+            <DaySection
+              key={day.id}
+              onHover={setHighlighted}
+              trip={trip}
+              day={day}
+              index={i}
+              color={DAY_COLORS[i % DAY_COLORS.length]}
+              track={tracks.get(day.gpx)}
+            />
+          ))}
+        </div>
       </section>
 
       <Comments
