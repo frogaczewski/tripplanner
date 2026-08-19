@@ -5,7 +5,7 @@ import DaySection from '../components/DaySection'
 import MapView, { type MapLayer } from '../components/MapView'
 import { getTrip } from '../data/trips'
 import { formatDistance } from '../lib/gpx'
-import { isPlannedRoute, staticTripTotals } from '../lib/stats'
+import { isPlannedRoute, isSketchRoute, staticTripTotals } from '../lib/stats'
 import { useTracks } from '../lib/useGpx'
 import { DAY_COLORS } from '../lib/colors'
 import NotFound from './NotFound'
@@ -51,6 +51,7 @@ export default function TripDetail() {
 
   const totals = staticTripTotals(trip)
   const planned = isPlannedRoute(trip)
+  const sketch = isSketchRoute(trip)
 
   return (
     <div className="page">
@@ -90,13 +91,24 @@ export default function TripDetail() {
         </dl>
       </header>
 
-      {planned && (
+      {planned && !sketch && (
         <p className="route-note">
           <strong>Routed plan, not yet ridden.</strong> The line follows real roads and
           tracks (routed with BRouter&rsquo;s gravel profile over OpenStreetMap), so the
           distances and climbs below are measured from it. What it cannot tell you is
           whether a piste is rideable on the day — surfaces come from OSM tags and the
           high cols hold snow well into spring.
+        </p>
+      )}
+
+      {sketch && (
+        <p className="route-note">
+          <strong>Sketch line, not a routed track.</strong> The corridor, the passes and
+          the day splits are researched from real roads, but the line between the named
+          places was drawn rather than routed — it was calibrated to the road distance and
+          climbing each day is known to carry, so treat every number below as a planning
+          estimate rather than a measurement. Re-run{' '}
+          <code>npm run gpx:taurus -- --brouter</code> to replace it with a measured route.
         </p>
       )}
 

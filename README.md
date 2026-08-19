@@ -55,6 +55,20 @@ numbers.
 }
 ```
 
+A trip that has not been ridden should also carry `routeQuality`:
+
+| Value | Means |
+| --- | --- |
+| `recorded` (default) | The GPX came off a device. |
+| `planned-routed` | A router produced the line over OSM ways; the numbers are measurements of that line. |
+| `planned-sketch` | The named places are researched but the line between them was drawn and calibrated to known road distances, so the numbers are estimates. |
+
+Both planned kinds show a note on the trip and day pages saying which they are.
+The Taurus options are the sketch case: `scripts/taurus-route.json` holds their
+researched control points and `npm run gpx:taurus` rebuilds the tracks from it,
+with `npm run gpx:taurus -- --brouter` re-routing them properly once a routing
+engine is reachable. See `docs/taurus-2026.md`.
+
 Any GPX 1.1 file with `<trkpt>` elements works. `<ele>` and `<time>` are optional —
 the stats that depend on them are shown as `—` when missing. Files that only carry
 a route (`<rtept>`) are handled too.

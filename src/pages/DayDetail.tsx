@@ -6,7 +6,7 @@ import MapView, { type MapLayer } from '../components/MapView'
 import { getDay } from '../data/trips'
 import { DAY_COLORS } from '../lib/colors'
 import { formatDistance, formatDuration, formatElevation } from '../lib/gpx'
-import { isPlannedRoute } from '../lib/stats'
+import { isPlannedRoute, isSketchRoute } from '../lib/stats'
 import { useTrack, useTracks } from '../lib/useGpx'
 import NotFound from './NotFound'
 
@@ -41,6 +41,7 @@ export default function DayDetail() {
 
   if (!found) return <NotFound />
   const planned = isPlannedRoute(found.trip)
+  const sketch = isSketchRoute(found.trip)
   const { trip, day, index } = found
   const color = DAY_COLORS[index % DAY_COLORS.length]
   const prev = index > 0 ? trip.days[index - 1] : null
@@ -125,11 +126,21 @@ export default function DayDetail() {
             </div>
           </dl>
 
-          {planned && (
+          {planned && !sketch && (
             <p className="route-note">
               <strong>Routed plan, not yet ridden.</strong> Everything below is measured
               from a line routed over OpenStreetMap, so there is no elapsed or moving
               time — nobody has ridden it yet.
+            </p>
+          )}
+
+          {sketch && (
+            <p className="route-note">
+              <strong>Sketch line, not a routed track.</strong> The places this day
+              strings together are researched; the line between them was drawn and then
+              calibrated to the road distance and climbing the day is known to carry. The
+              figures are planning estimates, and there is no elapsed or moving time
+              because nobody has ridden it.
             </p>
           )}
 

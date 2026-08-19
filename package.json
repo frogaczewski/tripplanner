@@ -11,6 +11,7 @@
     "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p functions/tsconfig.json",
     "preview": "vite preview",
     "gpx:sample": "node scripts/generate-sample-gpx.mjs",
+    "gpx:taurus": "node scripts/build-taurus-gpx.mjs",
     "pages:dev": "wrangler pages dev dist --d1=DB",
     "db:migrate:local": "wrangler d1 migrations apply tripplanner --local",
     "db:migrate:remote": "wrangler d1 migrations apply tripplanner --remote"

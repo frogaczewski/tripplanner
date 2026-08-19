@@ -1,0 +1,367 @@
+{
+  "$comment": [
+    "Researched skeleton for the Taurus (Toros) options, late October 2026.",
+    "",
+    "Each day is a chain of control points on real roads: towns, junctions and passes,",
+    "with the elevation each of them actually sits at. `targetKm` and `targetAscentM`",
+    "are the researched road distance and climbing for the day — they are NOT measured",
+    "off the line below, which is a straight-segment skeleton and therefore shorter.",
+    "",
+    "scripts/build-taurus-gpx.mjs turns this into the committed GPX. In `sketch` mode it",
+    "densifies the skeleton and calibrates it to the targets, which is what is committed",
+    "today; with --brouter it re-routes every leg over OpenStreetMap instead, which is",
+    "what should replace it before anyone books a flight. See docs/taurus-2026.md."
+  ],
+  "options": [
+    {
+      "id": "taurus-taseli",
+      "profile": "Inland spine, Antalya to Mersin in seven days",
+      "days": [
+        {
+          "id": "day-1",
+          "name": "Antalya → Akseki",
+          "targetKm": 134,
+          "targetAscentM": 1750,
+          "points": [
+            ["Antalya, Kaleiçi", 36.8841, 30.7056, 25],
+            ["Aksu", 36.9448, 30.846, 20],
+            ["Kadriye", 36.852, 31.008, 15],
+            ["Serik", 36.9167, 31.098, 40],
+            ["Boğazkent", 36.83, 31.18, 10],
+            ["Manavgat", 36.7862, 31.4433, 30],
+            ["Sarılar", 36.85, 31.5, 120],
+            ["Bucakşeyhler", 36.92, 31.56, 340],
+            ["Taşlıca", 36.98, 31.68, 780],
+            ["Akseki", 37.0483, 31.7899, 1050]
+          ]
+        },
+        {
+          "id": "day-2",
+          "name": "Akseki → Alacabel → Bozkır",
+          "targetKm": 121,
+          "targetAscentM": 1600,
+          "points": [
+            ["Akseki", 37.0483, 31.7899, 1050],
+            ["Cevizli", 37.136, 31.848, 1112],
+            ["Alacabel Geçidi", 37.205, 31.872, 1825],
+            ["Gencek", 37.31, 31.83, 1400],
+            ["Seydişehir", 37.42, 31.85, 1123],
+            ["Ahırlı", 37.245, 32.09, 1200],
+            ["Bozkır", 37.19, 32.247, 1125]
+          ]
+        },
+        {
+          "id": "day-3",
+          "name": "Bozkır → Hadim → Taşkent",
+          "targetKm": 62,
+          "targetAscentM": 1600,
+          "points": [
+            ["Bozkır", 37.19, 32.247, 1125],
+            ["Sarıoğlan", 37.11, 32.33, 1250],
+            ["Yerköprü", 37.06, 32.37, 900],
+            ["Bağbaşı", 37.03, 32.42, 1150],
+            ["Hadim", 36.988, 32.459, 1530],
+            ["Korualan", 36.95, 32.475, 1620],
+            ["Taşkent", 36.9243, 32.4913, 1450]
+          ]
+        },
+        {
+          "id": "day-4",
+          "name": "Taşkent → Sarıveliler → Ermenek",
+          "targetKm": 87,
+          "targetAscentM": 1900,
+          "points": [
+            ["Taşkent", 36.9243, 32.4913, 1450],
+            ["Balcılar", 36.86, 32.53, 1700],
+            ["Provincial crest", 36.81, 32.56, 1850],
+            ["Sarıveliler", 36.725, 32.64, 1650],
+            ["Başyayla", 36.745, 32.72, 1500],
+            ["Göktepe", 36.69, 32.8, 1400],
+            ["Ermenek", 36.639, 32.89, 1250]
+          ]
+        },
+        {
+          "id": "day-5",
+          "name": "Ermenek → Mut",
+          "targetKm": 86,
+          "targetAscentM": 1450,
+          "points": [
+            ["Ermenek", 36.639, 32.89, 1250],
+            ["Ermenek barajı", 36.605, 32.98, 700],
+            ["Balkusan bridge", 36.6, 33.06, 450],
+            ["Kayaönü", 36.63, 33.18, 900],
+            ["Çukurbağ", 36.65, 33.29, 650],
+            ["Mut", 36.6439, 33.4389, 275]
+          ]
+        },
+        {
+          "id": "day-6",
+          "name": "Mut → Silifke → Erdemli",
+          "targetKm": 121,
+          "targetAscentM": 1050,
+          "points": [
+            ["Mut", 36.6439, 33.4389, 275],
+            ["Kızılca", 36.56, 33.55, 320],
+            ["Kayrak beli", 36.52, 33.62, 420],
+            ["Göksu kanyonu", 36.48, 33.7, 180],
+            ["Kırıkkavak", 36.42, 33.83, 140],
+            ["Silifke", 36.3775, 33.9344, 40],
+            ["Atakent", 36.42, 34.05, 15],
+            ["Kızkalesi", 36.464, 34.14, 10],
+            ["Ayaş burnu", 36.52, 34.2, 95],
+            ["Limonlu", 36.58, 34.26, 20],
+            ["Erdemli", 36.606, 34.308, 25]
+          ]
+        },
+        {
+          "id": "day-7",
+          "name": "Erdemli → Güzeloluk → Arslanköy → Mersin",
+          "targetKm": 115,
+          "targetAscentM": 2600,
+          "points": [
+            ["Erdemli", 36.606, 34.308, 25],
+            ["Esenpınar", 36.66, 34.22, 400],
+            ["Sömek", 36.71, 34.17, 1050],
+            ["Güzeloluk", 36.75, 34.14, 1400],
+            ["Kuşluca", 36.81, 34.25, 1500],
+            ["Arslanköy", 36.913, 34.363, 1475],
+            ["Kuzucubelen", 36.87, 34.45, 1050],
+            ["Değirmençay", 36.84, 34.53, 450],
+            ["Mersin", 36.8, 34.6333, 10]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taurus-coast-cols",
+      "profile": "Coast and cols, Antalya to Mersin in seven days",
+      "days": [
+        {
+          "id": "day-1",
+          "name": "Antalya → Side → Alanya",
+          "targetKm": 135,
+          "targetAscentM": 1050,
+          "points": [
+            ["Antalya, Kaleiçi", 36.8841, 30.7056, 25],
+            ["Aksu", 36.9448, 30.846, 20],
+            ["Kadriye", 36.852, 31.008, 15],
+            ["Boğazkent", 36.83, 31.18, 10],
+            ["Side", 36.767, 31.389, 10],
+            ["Manavgat", 36.7862, 31.4433, 30],
+            ["Çolaklı", 36.72, 31.5, 15],
+            ["Okurcalar", 36.63, 31.63, 60],
+            ["Türkler burnu", 36.61, 31.68, 130],
+            ["Avsallar", 36.6, 31.72, 40],
+            ["İncekum burnu", 36.58, 31.78, 95],
+            ["Konaklı", 36.56, 31.85, 20],
+            ["Alanya", 36.544, 31.999, 10]
+          ]
+        },
+        {
+          "id": "day-2",
+          "name": "Alanya → Taşkent",
+          "targetKm": 100,
+          "targetAscentM": 2750,
+          "points": [
+            ["Alanya", 36.544, 31.999, 10],
+            ["Oba", 36.55, 32.04, 60],
+            ["Güzelbağ", 36.67, 32.05, 400],
+            ["Sapadere junction", 36.72, 32.12, 750],
+            ["Gökbel", 36.78, 32.18, 1500],
+            ["Söbüçimen crest", 36.84, 32.32, 1800],
+            ["Beyreli", 36.88, 32.42, 1550],
+            ["Taşkent", 36.9243, 32.4913, 1450]
+          ]
+        },
+        {
+          "id": "day-3",
+          "name": "Taşkent → Sarıveliler → Ermenek",
+          "targetKm": 87,
+          "targetAscentM": 1900,
+          "points": [
+            ["Taşkent", 36.9243, 32.4913, 1450],
+            ["Balcılar", 36.86, 32.53, 1700],
+            ["Provincial crest", 36.81, 32.56, 1850],
+            ["Sarıveliler", 36.725, 32.64, 1650],
+            ["Başyayla", 36.745, 32.72, 1500],
+            ["Göktepe", 36.69, 32.8, 1400],
+            ["Ermenek", 36.639, 32.89, 1250]
+          ]
+        },
+        {
+          "id": "day-4",
+          "name": "Ermenek → Gezende → Anamur",
+          "targetKm": 100,
+          "targetAscentM": 1300,
+          "points": [
+            ["Ermenek", 36.639, 32.89, 1250],
+            ["Güneyyurt", 36.58, 32.93, 1150],
+            ["Kazancı", 36.51, 32.92, 700],
+            ["Gezende barajı", 36.42, 32.94, 200],
+            ["Kaş junction", 36.32, 32.9, 550],
+            ["Ovabaşı", 36.19, 32.88, 300],
+            ["Anamur", 36.076, 32.836, 15]
+          ]
+        },
+        {
+          "id": "day-5",
+          "name": "Anamur → Aydıncık → Silifke",
+          "targetKm": 130,
+          "targetAscentM": 1900,
+          "points": [
+            ["Anamur", 36.076, 32.836, 15],
+            ["Bozyazı", 36.103, 32.993, 20],
+            ["Tekeli", 36.11, 33.12, 180],
+            ["Sancak burnu", 36.13, 33.22, 260],
+            ["Aydıncık", 36.142, 33.32, 20],
+            ["Sipahili", 36.16, 33.45, 210],
+            ["Yanışlı", 36.16, 33.55, 250],
+            ["Yeşilovacık", 36.18, 33.63, 30],
+            ["Boğsak", 36.25, 33.79, 120],
+            ["Taşucu", 36.32, 33.88, 15],
+            ["Silifke", 36.3775, 33.9344, 40]
+          ]
+        },
+        {
+          "id": "day-6",
+          "name": "Silifke → Uzuncaburç → Kırobası → Arslanköy",
+          "targetKm": 120,
+          "targetAscentM": 2800,
+          "points": [
+            ["Silifke", 36.3775, 33.9344, 40],
+            ["Demircili", 36.47, 33.9, 450],
+            ["Uzuncaburç", 36.59, 33.92, 1210],
+            ["Kırobası (Mara)", 36.63, 33.98, 1100],
+            ["Sarıaydın", 36.66, 34.05, 1250],
+            ["Güzeloluk", 36.75, 34.14, 1400],
+            ["Kuşluca", 36.81, 34.25, 1500],
+            ["Arslanköy", 36.913, 34.363, 1475]
+          ]
+        },
+        {
+          "id": "day-7",
+          "name": "Arslanköy → Fındıkpınarı → Mersin",
+          "targetKm": 60,
+          "targetAscentM": 700,
+          "points": [
+            ["Arslanköy", 36.913, 34.363, 1475],
+            ["Kuzucubelen", 36.87, 34.45, 1050],
+            ["Fındıkpınarı", 36.82, 34.46, 1250],
+            ["Değirmençay", 36.84, 34.53, 450],
+            ["Mersin", 36.8, 34.6333, 10]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taurus-six",
+      "profile": "The inland spine compressed into six days",
+      "days": [
+        {
+          "id": "day-1",
+          "name": "Antalya → Akseki",
+          "targetKm": 134,
+          "targetAscentM": 1750,
+          "points": [
+            ["Antalya, Kaleiçi", 36.8841, 30.7056, 25],
+            ["Aksu", 36.9448, 30.846, 20],
+            ["Kadriye", 36.852, 31.008, 15],
+            ["Serik", 36.9167, 31.098, 40],
+            ["Boğazkent", 36.83, 31.18, 10],
+            ["Manavgat", 36.7862, 31.4433, 30],
+            ["Sarılar", 36.85, 31.5, 120],
+            ["Bucakşeyhler", 36.92, 31.56, 340],
+            ["Taşlıca", 36.98, 31.68, 780],
+            ["Akseki", 37.0483, 31.7899, 1050]
+          ]
+        },
+        {
+          "id": "day-2",
+          "name": "Akseki → Alacabel → Bozkır",
+          "targetKm": 121,
+          "targetAscentM": 1600,
+          "points": [
+            ["Akseki", 37.0483, 31.7899, 1050],
+            ["Cevizli", 37.136, 31.848, 1112],
+            ["Alacabel Geçidi", 37.205, 31.872, 1825],
+            ["Gencek", 37.31, 31.83, 1400],
+            ["Seydişehir", 37.42, 31.85, 1123],
+            ["Ahırlı", 37.245, 32.09, 1200],
+            ["Bozkır", 37.19, 32.247, 1125]
+          ]
+        },
+        {
+          "id": "day-3",
+          "name": "Bozkır → Taşkent → Sarıveliler",
+          "targetKm": 107,
+          "targetAscentM": 2550,
+          "points": [
+            ["Bozkır", 37.19, 32.247, 1125],
+            ["Sarıoğlan", 37.11, 32.33, 1250],
+            ["Yerköprü", 37.06, 32.37, 900],
+            ["Bağbaşı", 37.03, 32.42, 1150],
+            ["Hadim", 36.988, 32.459, 1530],
+            ["Korualan", 36.95, 32.475, 1620],
+            ["Taşkent", 36.9243, 32.4913, 1450],
+            ["Balcılar", 36.86, 32.53, 1700],
+            ["Provincial crest", 36.81, 32.56, 1850],
+            ["Sarıveliler", 36.725, 32.64, 1650]
+          ]
+        },
+        {
+          "id": "day-4",
+          "name": "Sarıveliler → Ermenek → Mut",
+          "targetKm": 128,
+          "targetAscentM": 2050,
+          "points": [
+            ["Sarıveliler", 36.725, 32.64, 1650],
+            ["Başyayla", 36.745, 32.72, 1500],
+            ["Göktepe", 36.69, 32.8, 1400],
+            ["Ermenek", 36.639, 32.89, 1250],
+            ["Ermenek barajı", 36.605, 32.98, 700],
+            ["Balkusan bridge", 36.6, 33.06, 450],
+            ["Kayaönü", 36.63, 33.18, 900],
+            ["Çukurbağ", 36.65, 33.29, 650],
+            ["Mut", 36.6439, 33.4389, 275]
+          ]
+        },
+        {
+          "id": "day-5",
+          "name": "Mut → Silifke → Erdemli",
+          "targetKm": 121,
+          "targetAscentM": 1050,
+          "points": [
+            ["Mut", 36.6439, 33.4389, 275],
+            ["Kızılca", 36.56, 33.55, 320],
+            ["Kayrak beli", 36.52, 33.62, 420],
+            ["Göksu kanyonu", 36.48, 33.7, 180],
+            ["Kırıkkavak", 36.42, 33.83, 140],
+            ["Silifke", 36.3775, 33.9344, 40],
+            ["Atakent", 36.42, 34.05, 15],
+            ["Kızkalesi", 36.464, 34.14, 10],
+            ["Ayaş burnu", 36.52, 34.2, 95],
+            ["Limonlu", 36.58, 34.26, 20],
+            ["Erdemli", 36.606, 34.308, 25]
+          ]
+        },
+        {
+          "id": "day-6",
+          "name": "Erdemli → Güzeloluk → Arslanköy → Mersin",
+          "targetKm": 115,
+          "targetAscentM": 2600,
+          "points": [
+            ["Erdemli", 36.606, 34.308, 25],
+            ["Esenpınar", 36.66, 34.22, 400],
+            ["Sömek", 36.71, 34.17, 1050],
+            ["Güzeloluk", 36.75, 34.14, 1400],
+            ["Kuşluca", 36.81, 34.25, 1500],
+            ["Arslanköy", 36.913, 34.363, 1475],
+            ["Kuzucubelen", 36.87, 34.45, 1050],
+            ["Değirmençay", 36.84, 34.53, 450],
+            ["Mersin", 36.8, 34.6333, 10]
+          ]
+        }
+      ]
+    }
+  ]
+}

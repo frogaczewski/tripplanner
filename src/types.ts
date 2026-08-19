@@ -26,9 +26,12 @@ export interface Trip {
    * `recorded` (the default) means the GPX came off a device. `planned-routed`
    * means the line was produced by a router over OSM ways — the distances and
    * climbs are real measurements of that line, but nobody has ridden it yet, so
-   * surfaces and passability are only as good as OSM.
+   * surfaces and passability are only as good as OSM. `planned-sketch` is a rung
+   * below: the towns and passes it strings together were researched, but the line
+   * between them was drawn rather than routed, so its distances and climbs are
+   * calibrated estimates and not measurements of anything.
    */
-  routeQuality?: 'recorded' | 'planned-routed'
+  routeQuality?: 'recorded' | 'planned-routed' | 'planned-sketch'
   /** Free text such as "Best Oct–Apr", shown on planned trips. */
   season?: string
   /**
