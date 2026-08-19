@@ -398,5 +398,205 @@
     "durationS": null,
     "movingS": null,
     "points": 1435
+  },
+  "/gpx/taurus-coast-cols/day-1.gpx": {
+    "distanceM": 135000.22078047635,
+    "ascentM": 1060,
+    "descentM": 1074,
+    "minEleM": 1,
+    "maxEleM": 130,
+    "durationS": null,
+    "movingS": null,
+    "points": 3287
+  },
+  "/gpx/taurus-coast-cols/day-2.gpx": {
+    "distanceM": 100000.40279277321,
+    "ascentM": 2748,
+    "descentM": 1307,
+    "minEleM": 10,
+    "maxEleM": 1800,
+    "durationS": null,
+    "movingS": null,
+    "points": 1654
+  },
+  "/gpx/taurus-coast-cols/day-3.gpx": {
+    "distanceM": 86999.68238198478,
+    "ascentM": 1890,
+    "descentM": 2087,
+    "minEleM": 1250,
+    "maxEleM": 1850,
+    "durationS": null,
+    "movingS": null,
+    "points": 1317
+  },
+  "/gpx/taurus-coast-cols/day-4.gpx": {
+    "distanceM": 99999.79917080172,
+    "ascentM": 1302,
+    "descentM": 2536,
+    "minEleM": 15,
+    "maxEleM": 1250,
+    "durationS": null,
+    "movingS": null,
+    "points": 1626
+  },
+  "/gpx/taurus-coast-cols/day-5.gpx": {
+    "distanceM": 130000.06345059046,
+    "ascentM": 1913,
+    "descentM": 1890,
+    "minEleM": 2.3,
+    "maxEleM": 260,
+    "durationS": null,
+    "movingS": null,
+    "points": 2703
+  },
+  "/gpx/taurus-coast-cols/day-6.gpx": {
+    "distanceM": 120000.39901976722,
+    "ascentM": 2808,
+    "descentM": 1372,
+    "minEleM": 40,
+    "maxEleM": 1509.3,
+    "durationS": null,
+    "movingS": null,
+    "points": 1955
+  },
+  "/gpx/taurus-coast-cols/day-7.gpx": {
+    "distanceM": 59999.325434384074,
+    "ascentM": 702,
+    "descentM": 2165,
+    "minEleM": 10,
+    "maxEleM": 1475,
+    "durationS": null,
+    "movingS": null,
+    "points": 789
+  },
+  "/gpx/taurus-six/day-1.gpx": {
+    "distanceM": 134000.2857447133,
+    "ascentM": 1767,
+    "descentM": 744,
+    "minEleM": 4.8,
+    "maxEleM": 1050,
+    "durationS": null,
+    "movingS": null,
+    "points": 3046
+  },
+  "/gpx/taurus-six/day-2.gpx": {
+    "distanceM": 121000.27038709249,
+    "ascentM": 1617,
+    "descentM": 1541,
+    "minEleM": 1050,
+    "maxEleM": 1825,
+    "durationS": null,
+    "movingS": null,
+    "points": 2191
+  },
+  "/gpx/taurus-six/day-3.gpx": {
+    "distanceM": 107000.70225651188,
+    "ascentM": 2567,
+    "descentM": 2041,
+    "minEleM": 900,
+    "maxEleM": 1850,
+    "durationS": null,
+    "movingS": null,
+    "points": 1578
+  },
+  "/gpx/taurus-six/day-4.gpx": {
+    "distanceM": 127999.27401951453,
+    "ascentM": 2064,
+    "descentM": 3439,
+    "minEleM": 275,
+    "maxEleM": 1650,
+    "durationS": null,
+    "movingS": null,
+    "points": 1935
+  },
+  "/gpx/taurus-six/day-5.gpx": {
+    "distanceM": 120999.65491200479,
+    "ascentM": 1050,
+    "descentM": 1299,
+    "minEleM": 1,
+    "maxEleM": 420,
+    "durationS": null,
+    "movingS": null,
+    "points": 2409
+  },
+  "/gpx/taurus-six/day-6.gpx": {
+    "distanceM": 115001.42199634507,
+    "ascentM": 2612,
+    "descentM": 2627,
+    "minEleM": 10,
+    "maxEleM": 1505.4,
+    "durationS": null,
+    "movingS": null,
+    "points": 1912
+  },
+  "/gpx/taurus-taseli/day-1.gpx": {
+    "distanceM": 134000.2857447133,
+    "ascentM": 1767,
+    "descentM": 744,
+    "minEleM": 4.8,
+    "maxEleM": 1050,
+    "durationS": null,
+    "movingS": null,
+    "points": 3046
+  },
+  "/gpx/taurus-taseli/day-2.gpx": {
+    "distanceM": 121000.27038709249,
+    "ascentM": 1617,
+    "descentM": 1541,
+    "minEleM": 1050,
+    "maxEleM": 1825,
+    "durationS": null,
+    "movingS": null,
+    "points": 2191
+  },
+  "/gpx/taurus-taseli/day-3.gpx": {
+    "distanceM": 62000.27604739927,
+    "ascentM": 1607,
+    "descentM": 1282,
+    "minEleM": 900,
+    "maxEleM": 1620,
+    "durationS": null,
+    "movingS": null,
+    "points": 930
+  },
+  "/gpx/taurus-taseli/day-4.gpx": {
+    "distanceM": 86999.68238198478,
+    "ascentM": 1890,
+    "descentM": 2087,
+    "minEleM": 1250,
+    "maxEleM": 1850,
+    "durationS": null,
+    "movingS": null,
+    "points": 1317
+  },
+  "/gpx/taurus-taseli/day-5.gpx": {
+    "distanceM": 86000.11686579224,
+    "ascentM": 1455,
+    "descentM": 2430,
+    "minEleM": 275,
+    "maxEleM": 1250,
+    "durationS": null,
+    "movingS": null,
+    "points": 1267
+  },
+  "/gpx/taurus-taseli/day-6.gpx": {
+    "distanceM": 120999.65491200479,
+    "ascentM": 1050,
+    "descentM": 1299,
+    "minEleM": 1,
+    "maxEleM": 420,
+    "durationS": null,
+    "movingS": null,
+    "points": 2409
+  },
+  "/gpx/taurus-taseli/day-7.gpx": {
+    "distanceM": 115001.42199634507,
+    "ascentM": 2612,
+    "descentM": 2627,
+    "minEleM": 10,
+    "maxEleM": 1505.4,
+    "durationS": null,
+    "movingS": null,
+    "points": 1912
   }
 }

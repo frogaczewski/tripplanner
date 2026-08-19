@@ -34,9 +34,14 @@ export function staticTripTotals(trip: Trip): {
   )
 }
 
-/** True when the route was produced by a router rather than ridden. */
+/** True when the route was drawn or routed rather than ridden. */
 export function isPlannedRoute(trip: Trip): boolean {
-  return trip.routeQuality === 'planned-routed'
+  return trip.routeQuality === 'planned-routed' || trip.routeQuality === 'planned-sketch'
+}
+
+/** True when the line is a sketch, so its numbers are estimates, not measurements. */
+export function isSketchRoute(trip: Trip): boolean {
+  return trip.routeQuality === 'planned-sketch'
 }
 
 /** Trip totals, or nulls while the tracks are still loading. */

@@ -279,6 +279,311 @@
     ]
   },
   {
+    "id": "taurus-taseli",
+    "title": "Taşeli traverse (Taurus option)",
+    "optionLabel": "Taşeli traverse",
+    "region": "Central Taurus, Türkiye",
+    "status": "planned",
+    "startDate": "2026-10-24",
+    "endDate": "2026-10-30",
+    "summary": "Antalya to Mersin the inland way — over Alacabel onto the Konya plateau, east across the Taşeli plateau through Ermenek, down the Göksu to the sea and back up to Arslanköy for the last day. 726 km and 11,998 m over 7 days — 104 km and 1,714 m a day, tarmac throughout, one-way Antalya → Mersin.",
+    "routeQuality": "planned-sketch",
+    "season": "Best late Apr–Jun and mid-Sep–end Oct · the plateau above 1,500 m takes its first snow in November and the passes can close by December",
+    "planId": "taurus-2026",
+    "days": [
+      {
+        "id": "day-1",
+        "date": "2026-10-24",
+        "title": "Antalya → Akseki",
+        "summary": "Out of Kaleiçi along the Pamphylian plain to Manavgat, where the D695 turns inland and climbs a thousand metres to Akseki. Flat for 75 km, then all of the day's work in the last 60.",
+        "gpx": "/gpx/taurus-taseli/day-1.gpx",
+        "stayingAt": "Akseki — or Ormana, 12 km off-route, for the düğmeli ev guesthouses",
+        "highlights": [
+          "134 km, 1,750 m up",
+          "Sea level to 1,050 m",
+          "Side and Aspendos en route"
+        ]
+      },
+      {
+        "id": "day-2",
+        "date": "2026-10-25",
+        "title": "Akseki → Alacabel → Bozkır",
+        "summary": "The pass day. Alacabel at 1,825 m is the high point of the whole Antalya–Konya road; beyond it the mountains give way to the Konya plateau at Seydişehir, and a rolling 55 km east ends at Bozkır.",
+        "gpx": "/gpx/taurus-taseli/day-2.gpx",
+        "stayingAt": "Bozkır (1,125 m)",
+        "highlights": [
+          "121 km, 1,600 m up",
+          "Alacabel Geçidi 1,825 m",
+          "First night on the Konya side"
+        ]
+      },
+      {
+        "id": "day-3",
+        "date": "2026-10-26",
+        "title": "Bozkır → Hadim → Taşkent",
+        "summary": "Short and steep: down into the Göksu gorge at Yerköprü, then straight back up 700 m to Hadim, the highest district town in Konya. Half a day in hand for the waterfall and the tufa bridges.",
+        "gpx": "/gpx/taurus-taseli/day-3.gpx",
+        "stayingAt": "Hadim (1,530 m) or Taşkent, 10 km on",
+        "highlights": [
+          "62 km, 1,600 m up",
+          "Yerköprü waterfall",
+          "The short day — take the afternoon off"
+        ]
+      },
+      {
+        "id": "day-4",
+        "date": "2026-10-27",
+        "title": "Taşkent → Sarıveliler → Ermenek",
+        "summary": "Over the provincial crest at about 1,850 m onto the Taşeli plateau, then a shelf road along the mountainside through Sarıveliler and Başyayla to Ermenek. Nothing all day is below 1,200 m.",
+        "gpx": "/gpx/taurus-taseli/day-4.gpx",
+        "stayingAt": "Ermenek (1,250 m)",
+        "highlights": [
+          "87 km, 1,900 m up",
+          "High point about 1,850 m",
+          "Sarıveliler sits at 1,650 m"
+        ]
+      },
+      {
+        "id": "day-5",
+        "date": "2026-10-28",
+        "title": "Ermenek → Mut",
+        "summary": "Down to the Ermenek dam and the Göksu, over one more ridge, then off the plateau altogether to Mut at 275 m — apricots, Roman bridges and the first warm night since the coast.",
+        "gpx": "/gpx/taurus-taseli/day-5.gpx",
+        "stayingAt": "Mut (275 m)",
+        "highlights": [
+          "86 km, 1,450 m up",
+          "Ermenek dam gorge",
+          "Alahan monastery 20 km north"
+        ]
+      },
+      {
+        "id": "day-6",
+        "date": "2026-10-29",
+        "title": "Mut → Silifke → Erdemli",
+        "summary": "The recovery day: the whole Göksu canyon downhill to Silifke, then east along the coast past Kızkalesi. Long, but the only day under 1,100 m of climbing.",
+        "gpx": "/gpx/taurus-taseli/day-6.gpx",
+        "stayingAt": "Erdemli or Kızkalesi",
+        "highlights": [
+          "121 km, 1,050 m up",
+          "Göksu canyon",
+          "Kızkalesi's sea castle"
+        ]
+      },
+      {
+        "id": "day-7",
+        "date": "2026-10-30",
+        "title": "Erdemli → Güzeloluk → Arslanköy → Mersin",
+        "summary": "The sting in the tail: 1,400 m out of Erdemli onto the Bolkar shelf, across the yayla road to Arslanköy at 1,475 m, then a 40 km descent into Mersin.",
+        "gpx": "/gpx/taurus-taseli/day-7.gpx",
+        "stayingAt": "Mersin",
+        "highlights": [
+          "115 km, 2,600 m up",
+          "Biggest climbing day",
+          "Arslanköy 1,475 m"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "taurus-coast-cols",
+    "title": "Coast & cols (Taurus option)",
+    "optionLabel": "Coast & cols",
+    "region": "Central Taurus and the Cilician coast, Türkiye",
+    "status": "planned",
+    "startDate": "2026-10-24",
+    "endDate": "2026-10-30",
+    "summary": "The same crossing with its feet in the sea: coast to Alanya, then straight up to 1,800 m, over the Taşeli plateau to Ermenek, back down to the Mediterranean at Anamur, along the wildest stretch of the D400, and up the escarpment one last time. 732 km and 12,423 m over 7 days — 105 km and 1,775 m a day, one-way Antalya → Mersin.",
+    "routeQuality": "planned-sketch",
+    "season": "Best late Apr–Jun and mid-Sep–end Oct · the plateau above 1,500 m takes its first snow in November and the passes can close by December",
+    "planId": "taurus-2026",
+    "days": [
+      {
+        "id": "day-1",
+        "date": "2026-10-24",
+        "title": "Antalya → Side → Alanya",
+        "summary": "Flat and fast down the D400 past Side to Alanya. The only easy day of the week, and in late October the sea is still about 25 °C.",
+        "gpx": "/gpx/taurus-coast-cols/day-1.gpx",
+        "stayingAt": "Alanya",
+        "highlights": [
+          "135 km, 1,050 m up",
+          "Side's temple of Apollo",
+          "Sea still ~25 °C"
+        ]
+      },
+      {
+        "id": "day-2",
+        "date": "2026-10-25",
+        "title": "Alanya → Taşkent",
+        "summary": "Sea level to about 1,800 m in one go. The Alanya–Konya road leaves the Dim valley and climbs without a real break to the crest above Söbüçimen before settling onto the plateau at Taşkent.",
+        "gpx": "/gpx/taurus-coast-cols/day-2.gpx",
+        "stayingAt": "Taşkent, or Hadim 10 km on",
+        "highlights": [
+          "100 km, 2,750 m up",
+          "Sea level to about 1,800 m",
+          "Hardest day of any option"
+        ]
+      },
+      {
+        "id": "day-3",
+        "date": "2026-10-26",
+        "title": "Taşkent → Sarıveliler → Ermenek",
+        "summary": "Over the provincial crest at about 1,850 m and along the Taşeli shelf road through Sarıveliler and Başyayla to Ermenek.",
+        "gpx": "/gpx/taurus-coast-cols/day-3.gpx",
+        "stayingAt": "Ermenek (1,250 m)",
+        "highlights": [
+          "87 km, 1,900 m up",
+          "High point about 1,850 m",
+          "Sarıveliler sits at 1,650 m"
+        ]
+      },
+      {
+        "id": "day-4",
+        "date": "2026-10-27",
+        "title": "Ermenek → Gezende → Anamur",
+        "summary": "Down the Ermenek river past the Gezende dam and out to the Mediterranean at Anamur — 1,250 m to sea level through a gorge, on one of the best descents in the country.",
+        "gpx": "/gpx/taurus-coast-cols/day-4.gpx",
+        "stayingAt": "Anamur",
+        "highlights": [
+          "100 km, 1,300 m up",
+          "Gezende dam gorge",
+          "Mamure castle on the beach"
+        ]
+      },
+      {
+        "id": "day-5",
+        "date": "2026-10-28",
+        "title": "Anamur → Aydıncık → Silifke",
+        "summary": "The wild stretch of the D400: headland after headland, banana greenhouses, new viaducts. Drivers use the tunnels, which leaves the old coast road quiet — but check each tunnel before committing to it.",
+        "gpx": "/gpx/taurus-coast-cols/day-5.gpx",
+        "stayingAt": "Silifke",
+        "highlights": [
+          "130 km, 1,900 m up",
+          "Longest day",
+          "Tunnels: take the old road round"
+        ]
+      },
+      {
+        "id": "day-6",
+        "date": "2026-10-29",
+        "title": "Silifke → Uzuncaburç → Kırobası → Arslanköy",
+        "summary": "Back up the escarpment to Roman Diocaesarea at Uzuncaburç, then the plateau road north-east through Kırobası and Güzeloluk to Arslanköy. Sea level to 1,475 m with three ridges in between.",
+        "gpx": "/gpx/taurus-coast-cols/day-6.gpx",
+        "stayingAt": "Arslanköy (1,475 m) — dağ evi accommodation, book ahead",
+        "highlights": [
+          "120 km, 2,800 m up",
+          "Uzuncaburç (Diocaesarea), 1,210 m",
+          "Most climbing of the trip"
+        ]
+      },
+      {
+        "id": "day-7",
+        "date": "2026-10-30",
+        "title": "Arslanköy → Fındıkpınarı → Mersin",
+        "summary": "A short last morning: across to Fındıkpınarı and then 1,200 m down to the sea, with the afternoon free for the train to Adana.",
+        "gpx": "/gpx/taurus-coast-cols/day-7.gpx",
+        "stayingAt": "Mersin",
+        "highlights": [
+          "60 km, 700 m up",
+          "Short finish",
+          "Adana airport ~90 min by train"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "taurus-six",
+    "title": "The six-day line (Taurus option)",
+    "optionLabel": "The six-day line",
+    "region": "Central Taurus, Türkiye",
+    "status": "planned",
+    "startDate": "2026-10-25",
+    "endDate": "2026-10-30",
+    "summary": "The Taşeli traverse with a day taken out: the same road from Antalya to Mersin, split six ways instead of seven. 726 km and 11,677 m over 6 days — 121 km and 1,946 m a day. Nothing is cut except rest; two of the six days carry more than 2,000 m.",
+    "routeQuality": "planned-sketch",
+    "season": "Best late Apr–Jun and mid-Sep–end Oct · the plateau above 1,500 m takes its first snow in November and the passes can close by December",
+    "planId": "taurus-2026",
+    "days": [
+      {
+        "id": "day-1",
+        "date": "2026-10-25",
+        "title": "Antalya → Akseki",
+        "summary": "Out of Kaleiçi along the Pamphylian plain to Manavgat, then the D695 inland and a thousand metres up to Akseki.",
+        "gpx": "/gpx/taurus-six/day-1.gpx",
+        "stayingAt": "Akseki (1,050 m)",
+        "highlights": [
+          "134 km, 1,750 m up",
+          "Sea level to 1,050 m",
+          "Side and Aspendos en route"
+        ]
+      },
+      {
+        "id": "day-2",
+        "date": "2026-10-26",
+        "title": "Akseki → Alacabel → Bozkır",
+        "summary": "Alacabel at 1,825 m, the high point of the Antalya–Konya road, then Seydişehir and the plateau edge east to Bozkır.",
+        "gpx": "/gpx/taurus-six/day-2.gpx",
+        "stayingAt": "Bozkır (1,125 m)",
+        "highlights": [
+          "121 km, 1,600 m up",
+          "Alacabel Geçidi 1,825 m",
+          "First night on the Konya side"
+        ]
+      },
+      {
+        "id": "day-3",
+        "date": "2026-10-27",
+        "title": "Bozkır → Taşkent → Sarıveliler",
+        "summary": "The Göksu gorge at Yerköprü, the wall up to Hadim, then the crest onto the Taşeli plateau. The day the six-day version costs you.",
+        "gpx": "/gpx/taurus-six/day-3.gpx",
+        "stayingAt": "Sarıveliler (1,650 m) — beds are thin, ring ahead or push on to Ermenek",
+        "highlights": [
+          "107 km, 2,550 m up",
+          "Yerköprü waterfall and Hadim",
+          "Most climbing of the week"
+        ]
+      },
+      {
+        "id": "day-4",
+        "date": "2026-10-28",
+        "title": "Sarıveliler → Ermenek → Mut",
+        "summary": "Off the plateau in one push: Ermenek for lunch, the dam gorge below it, then the long drop to Mut at 275 m.",
+        "gpx": "/gpx/taurus-six/day-4.gpx",
+        "stayingAt": "Mut (275 m)",
+        "highlights": [
+          "128 km, 2,050 m up",
+          "Longest day",
+          "1,650 m down to 275 m"
+        ]
+      },
+      {
+        "id": "day-5",
+        "date": "2026-10-29",
+        "title": "Mut → Silifke → Erdemli",
+        "summary": "The Göksu canyon downhill to Silifke and east along the coast past Kızkalesi — the one day that is not a mountain day.",
+        "gpx": "/gpx/taurus-six/day-5.gpx",
+        "stayingAt": "Erdemli or Kızkalesi",
+        "highlights": [
+          "121 km, 1,050 m up",
+          "Göksu canyon",
+          "Kızkalesi's sea castle"
+        ]
+      },
+      {
+        "id": "day-6",
+        "date": "2026-10-30",
+        "title": "Erdemli → Güzeloluk → Arslanköy → Mersin",
+        "summary": "1,400 m out of Erdemli onto the Bolkar shelf, across to Arslanköy at 1,475 m, then the long descent into Mersin.",
+        "gpx": "/gpx/taurus-six/day-6.gpx",
+        "stayingAt": "Mersin",
+        "highlights": [
+          "115 km, 2,600 m up",
+          "Biggest climbing day",
+          "Arslanköy 1,475 m"
+        ]
+      }
+    ]
+  },
+  {
     "id": "manaslu-2025",
     "title": "Around Manaslu",
     "region": "Budhi Gandaki valley, Nepal",
